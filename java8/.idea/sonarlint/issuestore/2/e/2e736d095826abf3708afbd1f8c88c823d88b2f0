@@ -1,0 +1,15 @@
+
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(Öò·ïşÿÿÿÿ8¨ƒĞ½¥-
+Psquid:S1199"-Extract this nested code block into a method.(ÒÌâ–øÿÿÿÿ8¨ƒĞ½¥-
+V
+squid:S106"9Replace this use of System.out or System.err by a logger.(º¯úõ8¨ƒĞ½¥-
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(ßŒÀşÿÿÿÿ8¨ƒĞ½¥-
+|squid:S1171
+"YMove the contents of this initializer to a standard constructor or to field initializers.(ÒÌâ–øÿÿÿÿ8¨ƒĞ½¥-
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(ìîâşÿÿÿÿ8¨ƒĞ½¥-
+Lsquid:S1481")Remove this unused "test" local variable.(Ú øüøÿÿÿÿ8¨ƒĞ½¥-
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(ÂÖ«şşÿÿÿÿ8¨ƒĞ½¥-

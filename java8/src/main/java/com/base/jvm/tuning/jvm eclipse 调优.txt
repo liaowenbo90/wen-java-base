@@ -1,0 +1,42 @@
+jvm eclipse 调优
+	1、根据gc日志分析jvm内存、回收来调整各个区域内存比例或者回收策略
+	2、根据dump出来的内存结构、线程栈分析不合的地方进行改进
+	分析日志
+		young gc 主要是针对年轻代进行内存回收比较频繁，耗时短；
+		full gc 会对整个堆内存进行回城，耗时长，
+			因此一般尽量减少full gc的次数
+	启动优化
+		1、避免内存频繁动态扩展 直接把-Xms,-Xmx一致 ，-Xms1024m
+		2分配内存加倍
+			--launcher.XXMaxPermSize 512M
+			--launcher.XXMaxPermSize512m
+			-Xms2048m -Xmx2048m
+		3、关闭字节码 ,-Xverify:none（关闭Java字节码验证，从而加快了类装入的速度）
+
+		eclipse.ini
+			-startup
+			plugins/org.eclipse.equinox.launcher_1.3.100.v20150511-1540.jar
+			--launcher.library
+			plugins/org.eclipse.equinox.launcher.win32.win32.x86_64_1.1.300.
+v20150602-1417
+			-product
+			org.eclipse.epp.package.jee.product
+			--launcher.defaultAction
+			openFile
+			--launcher.XXMaxPermSize
+			512M
+			-showsplash
+			org.eclipse.platform
+			--launcher.XXMaxPermSize
+			512m
+			--launcher.defaultAction
+			openFile
+			--launcher.appendVmargs
+			-vmargs
+			-Dosgi.requiredJavaVersion=1.7
+			-Xms2048m
+			-Xmx2048m
+			-Xverify:none
+			-XX:+PrintGCDetails
+			-XX:+PrintGCDateStamps
+			-Xloggc:gc.log

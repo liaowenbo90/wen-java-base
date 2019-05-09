@@ -1,0 +1,81 @@
+多线程
+
+线程/进程/程序
+    线程：与进程相似，更小的单位，一个进程产生多个线程，不同的是线和程共享一块内存空间和一组系统资源
+    进程：程序的执行过程，程序从创建到消亡的过程
+    程序：静态代码
+多线程概念
+    多个线程同时（多核cpu）或交替（单核cpu）运行，
+    开发高并发系统的基础，提高整体系统性能
+并发与并行
+    并发：多个任务交替运行、串
+    并行：同时执行
+高并发
+    同时并行处理很多请求
+    指标：响应时间、吞吐量、每秒查询、并发的用户数
+临界区
+    多线程共享的资源，一但被占用，需要等待释放
+多线程常见的几种方式
+    继承thread
+    实现runable
+    使用线程池
+实例变量与线程安全
+
+常用方法
+    isAlive() 线程是否处于活动状态
+    sleep(long) 休眠
+    interrupt() 中断线程
+    join() 主线程需要等待子线程
+线程分类
+    用户进程：前台执行具体任务线程
+    守护进程：帮助前台执行任务的“佣人”，通过调用 setDaemon(true),最常见的守护进程，垃圾回收
+synchronized
+    synchronized与对象
+        synchronized取得的锁都是对象锁，而不是一个方法、一段代码的锁
+    synchronized重入锁
+        自已可以再次获得内部锁
+    缺点：使用的不好不能带来性能的提升
+    synchronized同步性
+        synchronized（this）当前线程访问，其它线程阻塞，代码块使用的对象监视器是同一个
+    静态同步方法与类同步方法
+        synchronized关键字加到静态方法和synchronized(this),都是给类同步，而synchronized加到非静态方法上则是对象上加锁
+
+volatile关键字
+    线程每次访问，强迫线程从主内存中读取，保持数据的一致性
+    volatile与synthronized
+        volaitle 是轻量级，性能好，做用于变量，保证可见性但不能保证原子性，不会发生阻塞
+        synronized 做用于代码块，两者都保证，可能会发生阻塞
+lock的使用
+    锁的实现接口
+        ReentrantLock ， ReentrantReadWriteLock.ReadLock ， ReentrantReadWriteLock.WriteLock
+    控制多线程对共享资源访问的工具
+    特性：
+        非阻塞获取锁、中断获取锁、超时获取锁
+    方法
+        lock():获取锁
+        lockInteruptibly():获取锁并立即返回，可中断
+        newCondition():获取等待通知
+        tryLock():调用时才获取锁
+        unLock():释放锁
+
+            newCondition()类似于wait/notfiy
+                内部方法
+                    wait()、wait(long)、signal()/signalAll()类似于notify()
+            reentrantLock(排他锁)只有一个线程能得到锁，性能低
+                reetrantLock(false/true):公平锁/非公平锁，获得锁的顺序是有序/无序的
+            readWriteLock
+                ReentrantReadWriteLock分成(读/写)共享锁，读锁不互斥，写锁与写锁互斥, 读写操作是互斥的
+
+多线程快？
+    cpu通过给多线程分配cpu时间段实现伪并行
+
+    减少上下文切换
+    避免死锁
+    解决资源限制
+线程池、Executor
+
+
+
+
+
+

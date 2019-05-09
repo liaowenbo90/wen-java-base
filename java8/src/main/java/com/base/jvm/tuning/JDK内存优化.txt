@@ -1,0 +1,43 @@
+1、JDK内存优化
+	物理内容情况：相关参数优化tomcat
+		window:
+			文件/bin/catalina.bat
+		unix:
+			/bin/catalina.sh
+		JAVA_OPTS='-Xms[初始化内存] -Xmx[可使用最大内存]'
+		如：JAVA_OPTS='-Xms256 -Xmx512'
+		参数：
+			-server 启用jdk的server版本
+			-Xms java虚拟机初始化的最小内存
+			-Xmx java虚拟机初始化的最大内存
+			-XX:PermSize 内存永久保留区域
+			-XX:MaxPermSize 内存最大永久保留区域
+			-Xmn jvm最小内存
+			32G 内存配置示例：
+			  JAVA_OPTS="$JAVA_OPTS  -Xms10g -Xmx10g -XX:PermSize=1g 
+			  -XX:MaxPermSize=2g -Xshare:off -Xmn1024m
+2、tomcat线程优化
+	server.xml 和连接相关的参数
+		maxThreads: tomcat使用线程接收请求，表示可创建最大线程数，默认150
+		acceptCount:所有线程都被使用时，可以放到处理队列的请求数，默认10
+		minSpareThreads:tomcat初始化创建线程数，默认25
+		maxSpareThreads:超过这个数，tomcat将不再创建socket线程，默认75
+		enableLookups:是否反查域名，默认true,提高性能应设false
+		connectionTimeout:网络连接超时，默认60000，通常设30000
+		maxkeepAliveRequest:保持请求数量，默认100
+		compression:压缩传输 ，取值 on/off/force ,默认off
+		加大并发量并发连接数 相关参数 maxThreads 、acceptCount 同时加大
+			<Connector port="8080" protocol="HTTP/1.1"
+               connectionTimeout="20000" maxThreads="1000" minSpareThreads="60"
+			   maxSpareThreads="600"  acceptCount="120"  
+               redirectPort="8443" URIEncoding="utf-8"/>
+			   
+3、性能监控
+	visualvm:jdk自带监控工具 在/bin/jvisualvm.exe
+		配置：
+			set JAVA_OPTS=-Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=9008 
+			-Dcom.sun.management.jmxremote.authenticate=false -    Dcom.sun.management.jmxremote.ssl=false
+			
+			重启后，添加服务ip、端口
+			
+		

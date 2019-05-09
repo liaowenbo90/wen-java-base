@@ -1,0 +1,20 @@
+io
+    分类
+    （输入、输出）
+        输入 inputStream/reader  字节流/字符流
+        输出 outputStream/writer 字节流/字符流
+      操作对象
+        基本操作
+        序列化操作
+        文件操作
+        数组操作
+        转化操作
+        缓冲操作
+        打印操作
+io/nio
+    io面向流/nio面象缓冲区
+    io阻塞/nio非阻塞
+    io无选择器/nio有选择器
+io path、File
+    io 在path与File之间进行转换
+

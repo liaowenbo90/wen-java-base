@@ -1,0 +1,25 @@
+jvm 如何优化
+	垃圾收集器的工作是清除java创建的对象
+		1、减少创建对象的数量
+		2、使用StringBuilder/StrinbBuffer代替String
+		3、尽量少输出日志
+	GC优化的目地
+		1、将进入老年代的对象数量降到最低
+			减少进入老年代的对象数量可以显著降低Full GC的频率
+			
+		2、减少Full GC的执行时间
+	GC优化需要考虑的JVM参数
+		堆内存大小  
+			-Xms 启动JVM时堆内存的大小
+			-Xmx 堆内存最大限制
+		新生代空间大小			
+			-XX:NewRatio 新生代和老年代的内存比
+			-XX:NewSize	新生代内存大小
+			-XX:SurvivorRatio Eden区和Survivor区的内存比
+	GC优化过程
+		1、监控GC状态
+		2、分析结果后决定是否优化GC
+			堆转储（heap dump）是一个用来检查java内存中的对象和数据的内存文件
+				jmap 来创建
+		完成GC优化最快地方法是什么？
+			答案是比较性能测试的结果

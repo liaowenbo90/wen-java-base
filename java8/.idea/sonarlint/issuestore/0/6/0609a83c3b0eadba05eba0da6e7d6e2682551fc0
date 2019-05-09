@@ -1,0 +1,13 @@
+
+Rsquid:S1854!";Remove this useless assignment to local variable "nonNull".(Á¦Ú¿
+Ksquid:S1481%"/Remove this unused "isNotEmpty" local variable.(–Ù²¼øÿÿÿÿ
+Gsquid:S1481""+Remove this unused "isNull" local variable.(¶›Þþÿÿÿÿ
+Ksquid:S16118"/Remove the parentheses around the "p" parameter(ÁáÕ²ùÿÿÿÿ
+Ksquid:S1611"/Remove the parentheses around the "s" parameter(‹ó¹¿üÿÿÿÿ
+T
+squid:S106J"9Replace this use of System.out or System.err by a logger.(âìÍ‚øÿÿÿÿ
+Vsquid:S1854"":Remove this useless assignment to local variable "isNull".(¶›Þþÿÿÿÿ
+Zsquid:S1854%">Remove this useless assignment to local variable "isNotEmpty".(–Ù²¼øÿÿÿÿ
+T
+squid:S1068"9Replace this use of System.out or System.err by a logger.(ÁáÕ²ùÿÿÿÿ
+Csquid:S1481!",Remove this unused "nonNull" local variable.(Á¦Ú¿

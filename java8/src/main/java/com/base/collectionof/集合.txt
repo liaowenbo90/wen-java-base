@@ -1,0 +1,62 @@
+    ArrayList
+        动态数组
+        继承于abstract
+        线程不安全的,只在单线程中运行，线程安全的 Vector和CopyOnWriteArrayList
+        实现了 cloneable与serializbler接口， 可克隆与序列化
+
+List/Set/Map
+   list：顺序好帮手
+   set:唯一
+   map：key搜索专家
+ArrayList与linkedList区别
+    arrayList:底层是数组，读取性能高，添加删除性能低
+    linkedList:
+ArrayList与Vector
+    vector：是同步的、线程安全的
+    ArrayList:不是线程同步的,不做线程同步尽量用ArrayList
+HashMap与HashTable
+    线程安全、同步：hashMap 线程不安全但性能高,Hashtable线程安全同步性能低
+    空值：hashmap可以存空值，hashTable存值会报错
+    线程安全5以上，可使用concurrentHashMap
+HashSet与HashMap
+    存储：HashSet存储对象， HashMap存储键值对
+    性能：hashMap更高
+    hashCode:hashMap用key值来计算hashCode值，hashSet用对象来计算hashCode值对于两个对对象hashCode可能相等，用equals来判断
+HashMap与ConcurrentHashMap
+    concurrentHashMap对整个桶数组进行分割分段进行加锁，精细度比hashTable高，性能更好，hashMap没有加锁
+    concurrentHashMap存值不能为空
+HashSet检查重复
+    先用hashCode判断位置，有相同的则调用equals来判断
+comparable与comparator
+    comparable 接口实现来自lang,comparator来自util
+    要排序得重写conparaTo或者conpare方法
+Objects list 排序
+    集合排序ArrayList.sort(),数组排序Collection.sort()
+数组与list相互转换
+    toArrayList(size),Arrays.asList(a)
+ArrayList 交集、并集、差集、去重复并集
+    addAll(objs)交集 添加到未尾/retainAll(objs)并集 保留指定/removeAll(objs)差集 删除指定
+
+集合框架底层数据结构总结
+- Collection
+
+    1. List
+
+    Arraylist：数组（查询快,增删慢 线程不安全,效率高 ）
+    Vector：数组（查询快,增删慢 线程安全,效率低 ）
+    LinkedList：链表（查询慢,增删快 线程不安全,效率高 ）
+    2. Set
+
+    HashSet（无序，唯一）:哈希表或者叫散列集(hash table)
+    LinkedHashSet：链表和哈希表组成 。 由链表保证元素的排序 ， 由哈希表证元素的唯一性
+    TreeSet（有序，唯一）：红黑树(自平衡的排序二叉树。)
+    - Map
+
+    HashMap：基于哈希表的Map接口实现（哈希表对键进行散列，Map结构即映射表存放键值对）
+    LinkedHashMap:HashMap 的基础上加上了链表数据结构
+    HashTable:哈希表
+    TreeMap:红黑树（自平衡的排序二叉树）
+
+
+
+

@@ -1,0 +1,45 @@
+jvm调优
+	jps:显示HotSpot 进程
+		命令格式：jps 参数 主机id
+		参数：
+			-l:输出主类全名或jar包
+			-q:只输出LVMID
+			-m:jvm启动时传递mian的参数
+			-v:输出jvm启动时显示指定参数
+	jstat:监视虚拟机运行时状态信息，类装载、垃圾收集、jit
+		格式：jstat [option] LVMID [interval] [count]
+		参数：
+			[option] : 操作参数
+			LVMID : 本地虚拟机进程ID
+			[interval] : 连续输出的时间间隔
+			[count] : 连续输出的次数
+				option：
+					class:类加载统计
+					conmpiler：统计统计
+					gc：垃圾回收统计
+		常用命令：
+				jstat -class 11589  监视类装载、卸载数量、总空间以及耗费的时间
+				jstat -compiler 1262  输出JIT编译过的方法数量耗时等
+				jstat -gc 1262	 垃圾回收堆的行为统计
+				jstat -gc 1262 2000 20 每隔2000ms输出1262的gc情况，一共输出20次
+				jstat -gccause 28920 附加最近两次垃圾回收事件的原因
+				jstat -gcold 28920 统计旧生代的行为
+				jstat -gcnewcapacity 28920 新生代与其相应的内存空间的统计
+				jstat -gcold 28920 统计旧生代的行为
+				jstat -gcoldcapacity 28920 统计旧生代的大小和空间
+				jstat -gcpermcapacity 28920  永生代行为统计
+				jstat -printcompilation 28920 hotspot编译方法统计
+	jmap:用于生成heap dump 文件
+		格式：jmap [option] LVMID
+		常用命令：
+				jmap -heap 28920 打印heap的概要信息，GC使用的算法，heap的配置及
+				wise heap的使用情况,可以用此来判断内存目前的使用情况以及垃圾回收情况
+				jmap -histo:live 28920 | more 打印堆的对象统计，包括对象数、内存大小等等
+	jhat:用来分析jmap生成的dump
+		格式：jhat [dumpfile]
+	jstack:用于生成java虚拟机当前时刻的线程快照
+		格式：jstack [option] LVMID
+		常用命令：jstack -l 11494|more
+	jinfo：实时查看和调整虚拟机运行参数。
+		格式：jinfo [option] [args] LVMID
+		常用命令：jinfo -flag 11494

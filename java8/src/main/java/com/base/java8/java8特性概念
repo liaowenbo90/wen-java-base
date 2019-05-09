@@ -1,0 +1,39 @@
+java 8
+    默认方法接口（defult mothod interface） （Interface1 小例子）
+        defult关键字,向抽象方法中添加非抽象方法
+    lambda表达式 (简洁的匿名函数表达)  （lambda2小例子）
+
+        @functionalInterface 函数式接口
+            在一个抽象方法中只有一个抽象方法,在写匿名函数调用时,机虚机默认传递这个接口
+
+        通过 :: 引用静态方法、对象方法以及构造，不用传递变量，在调用的时候传递参数
+    内置函数接口 builtinfunction
+        Predicate 断言接口,只有一个参数
+        Function 传一个参数输出一个结果，可将多个函数连接起来 compose,andThen
+        Optional 用于判断空指针异常
+    流
+        streams 能在一组元素上串行、并行执行一些函数
+            Collection.stream() 构建
+                filter过滤 只保留符合条件的元素
+                sored 排序 不影响原有的数据
+                map将指定的元素进行转换
+                macth 匹配元素 返回 boolean
+                count 计数器，返回元素个数 是一个最终操作
+                reduce 规约，将多个元素合并成一个元素
+            stream1有小例子
+        parallel streams 并行流 ，在多个线程上同时执行，提升了性能
+    DataAPI 日期、时间相关API
+        Clock 用来访问当前时间
+        Timezones 获取时区
+        LocalTime 本地时间
+        LocalDateTime 本地时间日期
+        LocalTime1 小例子
+    Annotations 多重注解 一个注解使用多次
+        方法引用
+        可重复注释
+
+    class文件是通过反射获取参数信息
+
+
+
+

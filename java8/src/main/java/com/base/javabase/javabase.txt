@@ -1,0 +1,68 @@
+面象对象/面象过程
+    面象过程：性能好，不易维护，复用性差，不易扩展
+    面象对象：性能差，易维护，复用性好，易扩展
+jvm
+    运行java字节码（.class）虚拟机
+    java javac编译 .class文件 jvm编译成 二进制文件
+java与C++
+    java 不提供直接指针，内存更安全
+    java 单继承，C++ 多继承
+    java 有内存管理机制
+字符常量与字符串常量
+    形式上：字符常量：单引号，字符串常量：双引号
+    含义：字符常量相当于整形值，可进行运算，字符串常量代表一个地址
+重载与重写
+    重载：发生在一个类，方法名相同，其它不同
+    重写，发生在子、父类，方法名、参数相同
+java三大特性
+    继承
+    封装
+    多态 ： 在运行期间才决定类调用， 实现有两种，继承 多个子类实现同一个方法，接口
+String、StringBuffer、StringBuilder
+    线程安全：String是常量、StringBuffer 加了同步锁
+    线程不安全：Stringbuilder 没有加同步锁
+
+    性能
+        String 每次每次增加后生成新的对象
+        StringBuffer每次新增会对自身操作
+        StringBuilder 性能会高但线程不安全
+自动拆装箱
+    基本类与 它引用类相互转换
+抽象类与接口
+    接口中默认变量是final，抽象类则不一定
+    一个类可以实现多个接口，抽象类只能实现一个
+成员变量与局部变量
+    成员变量：存放堆内存，被static修饰则属于类
+    局部变量：存放于栈内存，会随着方法自动消失
+hashCode与equals
+    hashCode定义在Object中，快速确定存储的位置值
+    两个对象有相同的hashCode值，对象也不一定相等
+    equals相同，则hashCode相同
+    因此，eqauls被覆盖则hashCode一定人重写
+线程/进程/程序
+    线程：与进程相似，更小的单位，一个进程产生多个线程，不同的是线和程共享一块内存空间和一组系统资源
+    进程：程序的执行过程，程序从创建到消亡的过程
+    程序：静态代码
+线程基本状态
+    初始化，运行状态，阻塞状态，等待状态，等待超时
+final
+    变量：初始化后不能被修改，引用对象则不能重新引用
+    方法：子类不能重写
+    类：锁定、效率问题
+异常处理
+    throwable
+        error
+            VirtulMachineError
+                stackOverFlowError
+                OutofMemoryError
+            AWError
+        exception
+            Ioexception
+            runtimeException
+    异常能被程序本身处理，错误不能
+
+
+
+
+
+

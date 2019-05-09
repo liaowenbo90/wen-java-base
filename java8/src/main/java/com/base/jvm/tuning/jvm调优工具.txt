@@ -1,0 +1,12 @@
+jvm调优工具
+	jdk自带工具
+		jconsole:jdk自带java管理和监控，基于JMX的GUI性能监测工具
+			jdk/bin 下 jconsole.exe 启动
+		jvisualvm:jdk自带，用于查看java虚拟机上运用运行的基于java应用信息
+			在jdk/bin jvisualvm.exe 
+			安装插件主要：监控、线程、VisualGC, 主页 cpu、内存、类、线程
+			visualGC 常用功能 ：年轻代、老年代、gc频率、gc时间
+			VisualVM : 分析dump 内存快照，线程快照
+	第三方工具
+		MAT:基于eclipse的内存分析工具，java heap分析工具
+		GChisto: 专业分析gc日志

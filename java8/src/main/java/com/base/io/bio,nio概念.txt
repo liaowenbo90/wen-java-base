@@ -1,0 +1,20 @@
+BIO Blocking IO
+    同步阻塞I/O模式,数据的取与读都必须在一个线和程内阻塞执行
+        一请求应达通信模型 acceptor监听客户端请求 ,在循环中调用 accept 来接收
+        缺点：每个新的连接会创造一个新的线程，请求多的话，资源受限
+        thread pool
+        适用于 1000 以下的并发
+NIO  non blocking Io
+    同步非阻塞 I/o 模式
+        channel 渠道、buffer 缓冲区、selector 选择器
+        从渠道读写数据，都是先创建缓冲区，再从渠道读写
+        nio模型有两个线程,serverSlector 查询是否有新的连接，检测到有新的连接不会再创建线程而是绑定到 渠道 ,clientSelctor 在while中 负责查询是不否数据可读
+    Netty
+        封装了jdk 的Nio流
+AIO
+    异步非阻塞
+
+
+
+
+

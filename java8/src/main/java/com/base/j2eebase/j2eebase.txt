@@ -1,0 +1,54 @@
+Servlet
+    负责接收httpservletrequest与响应httpservletresponse反馈，只实例一次，init()初始化，destory销毁，线程不安全
+    CGI与Servlet
+    CGI会为每个请求创建一个进程而加大开销，请求的重复编码耗时
+    Servlet只启动一个进程和jvm降低开销，不同的请求如果是请求相同的类只加载一个类提高性能，
+    方法
+        init(),service(),destory(),getServletInfo(),getServletConfig()
+    生命周期：web容器加载servlet并将其实例化
+       init()初始化资源  只执行一次
+       service()调用服务
+       destory()销毁 只执行一次
+get与post的区别
+    数据：get一般是请求数据，post是提交数据
+    提交参数的方式：get 放在url连接后，post 放在请求头或http协议里，get受长度限制，一般大量数据用post
+    编码格式：get用百分号格式
+转发forward与重定向redirect
+    转发是服器行为，重定向是客户端行为
+    forward通过RequestDispatcher(xx.jsp)重新，redriect通过返回状态码301、302，客户端通过状态码重新请求资源
+    资源是否共享：forward共享，redriect不共享
+    运用：forward一般用于登录成功转发到功能模块，redriect
+自动刷新refresh
+    过段时间跳转、刷新页面，servlet 通过httpServletResponse 设置header 来刷新
+    如：reponse.setHeader("refresh","xxx.html")
+servlet与线程安全
+    线程不安全，定义属性尽量在get(),post()方法，属性最好定义为final
+jsp与servlet
+    servlet是jsp的一种简易形式，
+    servlet主要逻辑在java文件中脱离于html，jsp 是html与java的结合
+jsp工作原理
+    先部署后编译 部到服务器后编译生成java类到class类，后面直接请求class类
+jsp内置对象
+    request:封装用户端的请求
+    response：响应用户端的请求
+    pageContext：获取对象
+    session：用户会话
+    application：运行环境对象
+    out：输出
+    page：相当java（this）
+    config:配置对象
+    exception：抛出的异常对象
+request.getAttribute与getParamenter
+    getAttribute:取容器的数据 ，用于传递对像 object
+
+    getParament：取get、post ,用于接收表单提交数据，只能传递字符串
+session与cookie
+    session保存在服务端以某种形式
+    cookie保存在客户端，用于识别用户
+
+
+
+
+
+
+
