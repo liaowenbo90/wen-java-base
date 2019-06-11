@@ -1,0 +1,32 @@
+
+‚"squid:ClassVariableVisibilityCheck "TMake endTime1 a static final constant or non-public and provide accessors if needed.(¥â«ƒ
+O
+squid:S106"9Replace this use of System.out or System.err by a logger.(„¥‚‡
+Esquid:S1444 ".Make this "public static endTime1" field final(¥â«ƒ
+‰"squid:ClassVariableVisibilityCheck""VMake beginTime2 a static final constant or non-public and provide accessors if needed.(•¡Œüÿÿÿÿÿ
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(€òÌ‚üÿÿÿÿ
+Zsquid:S2276"CReplace the call to "Thread.sleep(...)" with a call to "wait(...)".(öÍËè
+‚"squid:ClassVariableVisibilityCheck#"TMake endTime2 a static final constant or non-public and provide accessors if needed.(Ö«¯í
+O
+squid:S106"9Replace this use of System.out or System.err by a logger.(ª„³Ì
+O
+squid:S106b"9Replace this use of System.out or System.err by a logger.(‡¸€Û
+Gsquid:S1444"0Make this "public static beginTime1" field final(»à¾—
+ssquid:S1450	"WRemove the "getData2" field and declare it as a local variable in the relevant methods.(Ôì¼Æıÿÿÿÿ
+Lsquid:S1444""0Make this "public static beginTime2" field final(•¡Œüÿÿÿÿÿ
+Nsquid:S1135"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ
+Msquid:S2696B"6Make the enclosing method "static" or remove this set.(ùØàé
+]squid:S2142T"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
+„"squid:ClassVariableVisibilityCheck"VMake beginTime1 a static final constant or non-public and provide accessors if needed.(»à¾—
+]squid:S2142"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
+Esquid:S1444#".Make this "public static endTime2" field final(Ö«¯í
+Rsquid:S26960"6Make the enclosing method "static" or remove this set.(ª–Íşÿÿÿÿ
+Rsquid:S26962"6Make the enclosing method "static" or remove this set.(Š¥Ûèùÿÿÿÿ
+?squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+Rsquid:S2696@"6Make the enclosing method "static" or remove this set.(ŒóÌ©ıÿÿÿÿ
+ssquid:S1450"WRemove the "getData1" field and declare it as a local variable in the relevant methods.(—Úš üÿÿÿÿ
+Vsquid:S1118":Add a private constructor to hide the implicit public one.(œğäöûÿÿÿÿ
+?squid:S1148U"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ñ´‡Ãùÿÿÿÿ

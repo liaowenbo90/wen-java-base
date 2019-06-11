@@ -1,0 +1,19 @@
+
+Nsquid:S14444"+Make this "public static count" field final(ıâÀÄûÿÿÿÿ8¨´¾ˆ©-
+‹"squid:ClassVariableVisibilityCheck4"QMake count a static final constant or non-public and provide accessors if needed.(ıâÀÄûÿÿÿÿ8Óâ¶ˆ©-
+vsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(¨¹ƒ‚ùÿÿÿÿ8ş¥‚ˆ©-
+vsquid:ModifiersOrderCheck4"EReorder the modifiers to comply with the Java Language Specification.(ıâÀÄûÿÿÿÿ8Óâ¶ˆ©-
+Fsquid:S1125"(Remove the literal "true" boolean value.(ÿñç8å¼›ƒ©-
+[
+squid:S106-"9Replace this use of System.out or System.err by a logger.(”“ äüÿÿÿÿ8ˆ„ƒ©-
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(à¿öÑúÿÿÿÿ8å¼›ƒ©-
+U
+squid:S106 "9Replace this use of System.out or System.err by a logger.(‡ÅëF8å¼›ƒ©-
+[
+squid:S106:"9Replace this use of System.out or System.err by a logger.(‹Ê–ùÿÿÿÿ8Óâ¶ˆ©-
+V
+squid:S106"9Replace this use of System.out or System.err by a logger.(×ëÆô8‡µˆ©-
+V
+squid:S106"9Replace this use of System.out or System.err by a logger.(¢ªè 8å¼›ƒ©-
+vsquid:ModifiersOrderCheck6"EReorder the modifiers to comply with the Java Language Specification.(ßíŞüøÿÿÿÿ8½Š‰©-

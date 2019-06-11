@@ -1,0 +1,57 @@
+	RabbitMQ
+		核心概念：生产、消费模型，主要是接收、转储、转发消息
+			生产者
+			消费者
+			消息：主要由两部份组成，消息头，消息体
+			
+			Exchange(交换器)：把信息分通过交换器分配到对应队列中
+				路由键：生产者发消息给交换器的时候，指定路由规则，通过路由键规则匹配绑定键
+				绑定键：交换器与队列绑定
+			消息队列：保存消息发送给消费者，RabbitMQ消息一直存放在队列中，kafka的消息一直存放在主题中
+			Broker（消息中间件的服务节点）：相当于一台RabbitMQ服务器
+			交换器类型：
+				fanout:把所有路由到的消息发送到与它绑定的队列中
+				direct：把所有的消息发送到bingkey与routingkey完全匹配的queue
+				topic:类似于direct,但没那么严格，
+				heakers
+		安装
+		
+			安装 rabbitMq				
+				vim /etc/yum.repos.d/rabbitmq-erlang.repo
+				[rabbitmq-erlang]
+				name=rabbitmq-erlang
+				baseurl=https://dl.bintray.com/rabbitmq/rpm/erlang/20/el/7
+				gpgcheck=1
+				gpgkey=https://www.rabbitmq.com/rabbitmq-release-signing-key.asc
+				repo_gpgcheck=0
+				enabled=1
+			 
+				yum install erlang
+				 
+
+				安装RabbitMQ服务器
+				wget https://dl.bintray.com/rabbitmq/all/rabbitmq-server/3.7.0/rabbitmq-server-3.7.0-1.el7.noarch.rpm
+				rpm --import https://dl.bintray.com/rabbitmq/Keys/rabbitmq-release-signing-key.asc
+				yum install rabbitmq-server-3.7.0-1.el7.noarch.rpm
+				 
+
+				启动服务器
+				systemctl enable rabbitmq-server
+				systemctl start rabbitmq-server
+			
+			rpm安装目录
+			cd /usr/lib/rabbitmq/bin
+			
+			使用rabbitctl添加用户
+				第一、添加mq用户并设置密码
+
+				root@live-mq-01:~ # rabbitmqctl add_user mq 123456
+				1
+				root@live-mq-01:~ # rabbitmqctl add_user mq 123456
+				第二、添加mq用户为administrator角色
+
+				root@live-mq-01:~ # rabbitmqctl set_user_tags mq administrator
+				1
+				root@live-mq-01:~ # rabbitmqctl set_user_tags mq administrator
+					
+					

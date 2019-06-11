@@ -1,0 +1,26 @@
+
+qsquid:ModifiersOrderCheck+"EReorder the modifiers to comply with the Java Language Specification.(‘ß¸í8”Şõ©-
+"squid:ClassVariableVisibilityCheckA"VMake conditionA a static final constant or non-public and provide accessors if needed.(¬¥¾Âşÿÿÿÿ8†ÿö©-
+vsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(œ‹¼ûÿÿÿÿ8”Şõ©-
+msquid:S00100m"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ê­ÖÎ8†ÿö©-
+Ysquid:S2274I";Remove this call to "await" or move it into a "while" loop.(Å‰¥Ã8Ÿó÷©-
+^squid:S2274X";Remove this call to "await" or move it into a "while" loop.(„úä¹şÿÿÿÿ8Ÿó÷©-
+[
+squid:S106J"9Replace this use of System.out or System.err by a logger.(¨¶¨ûÿÿÿÿÿ8†ÿö©-
+[
+squid:S106G"9Replace this use of System.out or System.err by a logger.(Ó¥¢Êûÿÿÿÿ8†ÿö©-
+[
+squid:S106Y"9Replace this use of System.out or System.err by a logger.(ˆ÷şÿÿÿÿ8†ÿö©-
+[
+squid:S106p"9Replace this use of System.out or System.err by a logger.(ßšáôüÿÿÿÿ8†ÿö©-
+‹"squid:ClassVariableVisibilityCheckB"VMake conditionB a static final constant or non-public and provide accessors if needed.(ô·Ğõ8†ÿö©-
+ksquid:S1192H"MDefine a constant instead of duplicating this literal " ThreadName=" 6 times.(™Ÿ¦8†ÿö©-
+msquid:S00100b"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†«ú×8†ÿö©-
+dsquid:S2142L"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8†ÿö©-
+dsquid:S2142["FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8†ÿö©-
+Fsquid:S1148\"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8†ÿö©-
+V
+squid:S106e"9Replace this use of System.out or System.err by a logger.(Ù®ú8†ÿö©-
+Fsquid:S1148M"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8†ÿö©-
+V
+squid:S106V"9Replace this use of System.out or System.err by a logger.(¥ÆÖ½8†ÿö©-

@@ -1,0 +1,7 @@
+
+Dsquid:S2201"-The return value of "isPresent" must be used.(¿ìä
+Ksquid:S1611"/Remove the parentheses around the "s" parameter(š°ÊÎüÿÿÿÿ
+>squid:S2201"'The return value of "get" must be used.(û¶²ó
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(š°ÊÎüÿÿÿÿ
+Fsquid:S2201"*The return value of "orElse" must be used.(Ÿİ©ÿÿÿÿÿ

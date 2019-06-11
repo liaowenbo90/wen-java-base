@@ -1,10 +1,10 @@
 
+Gsquid:S1481."+Remove this unused "person" local variable.(Âæ§—şÿÿÿÿ
 O
 squid:S106)"9Replace this use of System.out or System.err by a logger.(äÕàÊ
-Gsquid:S1481."+Remove this unused "person" local variable.(Âæ§—şÿÿÿÿ
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(çÛÏ¶ûÿÿÿÿ
-Csquid:S1612",Replace this lambda with a method reference.(×ÌûÙ
-Isquid:S1611"2Remove the parentheses around the "from" parameter(×ÌûÙ
 T
 squid:S106#"9Replace this use of System.out or System.err by a logger.(œÕÕçüÿÿÿÿ
+Csquid:S1612",Replace this lambda with a method reference.(×ÌûÙ
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(çÛÏ¶ûÿÿÿÿ
+Isquid:S1611"2Remove the parentheses around the "from" parameter(×ÌûÙ

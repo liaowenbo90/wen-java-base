@@ -1,0 +1,20 @@
+
+dsquid:S21420"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8³†û‰©-
+vsquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(¥¨	8ÍÕù‰©-
+Fsquid:S11481"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8³†û‰©-
+]squid:S1118":Add a private constructor to hide the implicit public one.(£“Î“ûÿÿÿÿ8šöş‰©-
+dsquid:S2142h"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8÷¡ş‰©-
+V
+squid:S106)"9Replace this use of System.out or System.err by a logger.(ŞØÈÀ8³†û‰©-
+Nsquid:S2446I"0"notify" may not wake up the appropriate thread.(ŒâÌ†8Ã÷ü‰©-
+dsquid:S2142P"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8Ã÷ü‰©-
+V
+squid:S106,"9Replace this use of System.out or System.err by a logger.(äİŒ8³†û‰©-
+fsquid:S2276M"CReplace the call to "Thread.sleep(...)" with a call to "wait(...)".(»ãßºøÿÿÿÿ8Ã÷ü‰©-
+V
+squid:S106L"9Replace this use of System.out or System.err by a logger.(·¾ß8Ã÷ü‰©-
+Xsquid:S2274+":Remove this call to "wait" or move it into a "while" loop.(ŒºÙ8³†û‰©-
+Fsquid:S1148Q"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Ã÷ü‰©-
+Fsquid:S1148i"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8÷¡ş‰©-
+V
+squid:S106J"9Replace this use of System.out or System.err by a logger.(íÔ§Ô8Ã÷ü‰©-

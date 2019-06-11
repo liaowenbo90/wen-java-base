@@ -1,0 +1,24 @@
+
+Fsquid:S1148#"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ú×È©-
+Fsquid:S11488"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ú×È©-
+5squid:S2438Z""threadC" is a "Thread".(•ûäT8ú×È©-
+Xsquid:S1161":Add the "@Override" annotation above this method signature(“–ış8ú×È©-
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(Øáãµüÿÿÿÿ8ú×È©-
+qsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(ë¾ôÎ8ú×È©-
+;squid:S2438Y""threadB" is a "Thread".(ï“ĞÖÿÿÿÿÿ8ú×È©-
+Xsquid:S1161+":Add the "@Override" annotation above this method signature(“–ış8ú×È©-
+qsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(Ì–Ñ£8ú×È©-
+V
+squid:S106G"9Replace this use of System.out or System.err by a logger.(ø¶úß8ú×È©-
+psquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(Çµí‘8ú×È©-
+qsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(œ€Û8ú×È©-
+;squid:S2438X""threadA" is a "Thread".(¤şŞÌüÿÿÿÿ8ú×È©-
+Xsquid:S1161@":Add the "@Override" annotation above this method signature(“–ış8ú×È©-
+dsquid:S21427"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8ú×È©-
+dsquid:S2142L"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8ú×È©-
+Fsquid:S1148M"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ú×È©-
+dsquid:S2142""FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8ú×È©-
+vsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(˜Œ«Ëúÿÿÿÿ8ú×È©-
+[
+squid:S1062"9Replace this use of System.out or System.err by a logger.(‚”Âşÿÿÿÿ8ú×È©-

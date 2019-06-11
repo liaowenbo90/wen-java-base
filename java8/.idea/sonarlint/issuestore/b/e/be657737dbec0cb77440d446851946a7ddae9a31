@@ -1,0 +1,32 @@
+
+Rsquid:S26966"6Make the enclosing method "static" or remove this set.(Îÿ˜Àúÿÿÿÿ
+ssquid:S1450"WRemove the "getData2" field and declare it as a local variable in the relevant methods.(Ôì¼Æıÿÿÿÿ
+‰"squid:ClassVariableVisibilityCheck("VMake beginTime2 a static final constant or non-public and provide accessors if needed.(•¡Œüÿÿÿÿÿ
+‚"squid:ClassVariableVisibilityCheck&"TMake endTime1 a static final constant or non-public and provide accessors if needed.(¥â«ƒ
+Esquid:S1444&".Make this "public static endTime1" field final(¥â«ƒ
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ñ´‡Ãùÿÿÿÿ
+ssquid:S1450"WRemove the "getData1" field and declare it as a local variable in the relevant methods.(—Úš üÿÿÿÿ
+O
+squid:S106"9Replace this use of System.out or System.err by a logger.(„¥‚‡
+„"squid:ClassVariableVisibilityCheck%"VMake beginTime1 a static final constant or non-public and provide accessors if needed.(»à¾—
+‚"squid:ClassVariableVisibilityCheck)"TMake endTime2 a static final constant or non-public and provide accessors if needed.(Ö«¯í
+Vsquid:S1118#":Add a private constructor to hide the implicit public one.(œğäöûÿÿÿÿ
+?squid:S1148["#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+Lsquid:S1444("0Make this "public static beginTime2" field final(•¡Œüÿÿÿÿÿ
+Rsquid:S26968"6Make the enclosing method "static" or remove this set.(ö¤—ıÿÿÿÿ
+]squid:S2142"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
+O
+squid:S106h"9Replace this use of System.out or System.err by a logger.(‡¸€Û
+?squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+Nsquid:S1135"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ
+Msquid:S2696H"6Make the enclosing method "static" or remove this set.(ìºÍ†
+]squid:S2142Z"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
+Rsquid:S2696F"6Make the enclosing method "static" or remove this set.(ã‰©°şÿÿÿÿ
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(€òÌ‚üÿÿÿÿ
+Esquid:S1444)".Make this "public static endTime2" field final(Ö«¯í
+Gsquid:S1444%"0Make this "public static beginTime1" field final(»à¾—
+O
+squid:S106
+"9Replace this use of System.out or System.err by a logger.(ª„³Ì

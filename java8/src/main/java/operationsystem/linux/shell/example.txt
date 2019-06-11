@@ -1,0 +1,327 @@
+#!/bin/bash
+
+hello="hello world" #自定义变量hello
+name="liaowenbo"
+str="liaowenbo is a great man"
+echo "自定义变量 hello"
+echo $hello
+echo "helloworld!"
+
+#参数传递
+echo "第一个参数为 $1"
+echo "总参数为 $#"
+echo "遍历所有参数 $*"
+
+
+#字符串拼接
+greeting="hello,"$name" !"
+greeting1="hello, ${name} !"
+echo "字符串拼接"
+echo $greeting $greeting1
+
+#字符串字度
+echo "字符串长度"
+echo $name
+echo "${#name} "
+echo "长度"
+expr length "$name"
+echo "字符串截取"
+echo $str
+echo "截取后"
+echo ${str:0:10}
+echo $str
+
+
+
+
+#!/bin/bash
+#
+echo "数组长度"
+array=(1 2 3 4 5 6);
+length=${#array[@]}
+
+echo $length
+
+echo "输出第个*元素"
+echo ${array[@]}
+
+echo "删除第三个元素"
+unset array[2]
+echo ${array[@]}
+
+#!/bin/bash
+echo "算术运算 *******************"
+
+a=10
+b=20
+echo "a:"$a""
+echo "b:"$b""
+echo "a+b"
+expr $a + $b
+
+echo "b-a"
+expr $b - $a
+
+echo "a*b"
+expr $a\*$b
+
+echo "a/b"
+expr $a / $b
+
+expr "取余 b % a"
+expr  $b % $a
+
+expr "赋值 a=$b"
+a=$b
+expr $a
+
+expr "比较相等 [$a == $b]"
+
+if [ $a == $b ]
+then
+    echo "$a == $b :a等于b"
+else
+    echo "$a != $b : a不等于b"
+fi
+
+
+expr "关系运算符*************"
+
+expr "检测两个是否相等 -eq"
+if [ $a -eq $b ]
+then
+   echo "$a -eq $b : a 等于 b"
+else
+   echo "$a -eq $b: a 不等于 b"
+fi
+
+
+expr "检测两个数是否不相等 -ne [ $a -ne $b ]"
+if [$a -ne $b ]
+then
+    echo "$a -ne $b : a不等于b"
+else
+    echo "$a -ne $b : a等于b"
+fi
+
+
+expr "检测左边是否大于右边 -gt [ $a -gt $b ]"
+if [ $a -gt $b ]
+then
+    echo "$a -tg $b : a 大于 b "
+else
+    echo "$a -tg $b : a 不大于 b"
+fi
+
+
+expr "检测左边是否小于右边 -lt [ $a -lt $b ]"
+if [ $a -lt $b ]
+then
+    echo "$a -lt $b : a 小于 b"
+else
+    echo "$a -lt $b : a 不小于 b"
+fi
+
+
+echo "检测左边是否大于右边 -ge [ $a -ge $b ]"
+if [ $a -ge $b ]
+then
+    echo "$a -ge $b : a 大于 b"
+else
+    echo "$a -ge $b : a 不大于 b"
+fi
+
+
+echo "检测左边是否小于右边 -le [ $a -le $b ]"
+if [ $a -le $b ]
+then
+    echo "$a -le $b : a 小于 b"
+else
+    echo "$a -le $b : a 不大于 b"
+fi
+
+
+echo "逻辑运算符 && ||"
+if [[ $a -lt 100 && $b -ge 10 ]]
+then
+    echo "$a -lt 100 && $b -ge 10 : a小于100且b大于10"
+else
+    echo "$a -lt 100 && $b -ge 10 : a大于100且b小于10"
+fi
+
+
+if [[ $a -lt 100 || $b -ge 10 ]]
+then
+    echo "$a -lt 100 || $b -ge 10 : a小于100或b大于10"
+else
+    echo "$a -lt 100 || $b -ge 10 : a大于100或b小于10"
+fi
+
+
+
+echo "布尔运算符**********"
+
+echo "非运算符 !"
+
+
+if [ !false ]
+then 
+	echo "!false 返回 true "
+else
+	echo "!false退回 false"
+fi
+
+
+echo "或运算符 -o"
+if [ $a -le $b -o $a -ge $b ]
+then 
+	echo "$a -le -o $a -ge $b : a小于b或a大于b"
+else
+	echo "$a -le -o $a -ge $b : a不小于b或a不大于b"
+fi
+
+
+expr "与运算符 -a 两个表达示为true"
+
+
+
+echo "字符串运算符"
+
+echo "检测两个字符串是否相等  =, 不相等 != "
+if [ $a = $b ]
+then
+	echo "$a = $b ,a 等于 b "
+else 
+	echo "a 不等于 b "
+fi 	
+
+
+echo "检测字符串长度是否为0 -z 、-n "
+if [ -z $b ]
+then 
+	echo "$b 的长度为0"
+else 
+	echo "$b 的长度不为零"
+fi
+
+
+if [ -n "$b" ]
+then 
+	echo "$b 的长度为0"
+else 
+	echo "$b 的长度不为零"
+fi
+
+
+echo "字符串的长度是否为空 "
+if [ $a ]
+then 
+	echo "$a 长度不为空"
+else	
+	echo "$a 长度为空"
+fi 
+
+
+
+
+echo "shell 流程控制*****************"
+echo "if else-if else  "
+ 
+ if [ $a == $b ]
+then 
+	echo "a等于b"
+elif [ $a > $b ]
+then
+	echo "a 大于 b "
+else 
+	echo "a 小于 b "
+fi
+ 
+ 
+echo "for 循环"
+
+for i in {0..9};
+do
+echo $RANDOM;
+done 
+ 
+for((i=1;i<=5;i++));
+do
+echo $i;
+done
+
+echo "while 循环"
+int =1
+while(( $int <= 5))
+do
+echo $int 
+let "int++" 
+done
+
+
+echo "键盘读取----"
+echo "按ctrl -D 退出"
+echo -n "请输入你喜欢的网站名"
+while read FILM
+do
+echo "$FILM 是一个好网站"
+done 
+
+#无限循环
+while :
+do 
+	echo "无限循环******"
+done	
+
+while true
+do 
+	echo "无限循环******"
+	echo "break 跳出"
+	break
+done	
+
+#for (( ; ; ))
+
+
+#case 多选语句
+echo "请输入1到4的数字"
+echo "您输入的数字为"
+read num
+case $num in 
+1) echo "您输入的是1"
+;;
+2) echo "您输入的是2"
+;;
+3) echo "您输入的是3"
+;;
+4) echo "您输入的是4"
+;;
+*) echo "您没有输入1到4之间的数"
+esac
+
+while true
+do 
+echo "请输入1到5之间的数"
+echo "您输入的数为"
+read number
+case $number in 
+1|2|3|4|5) echo "您输入的数字为,$number"
+;;
+*) echo "您输入的不是1到5之间，游戏结束"
+	break
+esac
+done
+
+
+
+
+#函数
+funWithParam(){
+ echo "第一个参数为 $1 !" 
+ echo "第二个参数为 $2 !" 
+ echo "第十个参数为 $10 !" 
+ echo "第十个参数为 ${10} !" 
+ echo "第十一个参数为 ${11} !" 
+ echo "参数总数有 $# 个!" 
+ echo "作为一个字符串输出所有参数 $* !" } 
+ funWithParam 1 2 3 4 5 6 7 8 9 34 73

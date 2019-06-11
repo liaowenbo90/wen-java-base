@@ -1,0 +1,18 @@
+
+rsquid:S2068
+"V'password' detected in this expression, review this potentially hard-coded credential.(Çåˆƒøÿÿÿÿ
+osquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(Ãþß³ûÿÿÿÿ
+jsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(Ð€Æñ
+Zsquid:S2276"CReplace the call to "Thread.sleep(...)" with a call to "wait(...)".(¬Æ„°
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(ªÊ‹Ýúÿÿÿÿ
+O
+squid:S106"9Replace this use of System.out or System.err by a logger.(Þë™Ì
+‚"squid:ClassVariableVisibilityCheck	"TMake username a static final constant or non-public and provide accessors if needed.(‹ž”¦
+‡"squid:ClassVariableVisibilityCheck
+"TMake password a static final constant or non-public and provide accessors if needed.(Çåˆƒøÿÿÿÿ
+Nsquid:S1135?"2Complete the task associated to this TODO comment.(ÕÌ®þÿÿÿÿ
+]squid:S2142"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
+]squid:S2142>"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
+?squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+?squid:S1148@"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ

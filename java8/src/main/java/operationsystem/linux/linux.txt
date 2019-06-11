@@ -1,0 +1,120 @@
+操作系统
+    管理软件与硬件资源的程序
+    分内核与外核，内核与硬件交互
+
+linux基本命令
+    用户管理
+        用户切换 su/sudo 用户名
+        用户群组
+            新增用户组: groupadd group_name
+            删除用户组：groupdel group_name
+            重命名一个用户组：groupmod -n new_group_name old_group_name
+            创建一个属于 "admin" 用户组的用户 :useradd -c "Name Surname " -g admin -d /home/user1 -s /bin/bash user1
+        用户
+            新增用户：useradd user1
+            删除用户：userdel -r user1
+            修改密码：passwd /passwd user1 (只能root用)
+            显示所有用户：users
+
+    目录（增删改查）
+        新增：mkdir 目录名称
+        查找：find 目录
+        修改：mv 目录名 新目录名
+        拷贝目录：cp -r 目录名 拷贝的目录（r递归拷贝）,还可以拷贝文件
+        删除目录文件：rm -rf
+        显示工作目录：pwd
+
+
+    文件（增删改查）
+        新增：touch 文件名称
+        查询：cat/more/less/tail 文件名
+            tail -f 对文件动态监控如日志
+            tail -10 查看后十行
+            more :回车、空格控制
+            less:上翻、下翻
+        改变文件所属及下级：chown -R user1 file1
+		改变文件所属组：chgrp dev otp_src_19.3.tar.gz 
+        修改：vim/vi
+            vim
+                显示行: :set number
+                文本查换：1、 /字符串 2、 ?name
+                替换操作： :a,bs/F/T 将a行到b行 F替换T
+                删除：:D 删除光标当位到未尾字符 dd: 删除光标正行内容
+                粘贴：:p 将缓存内容粘贴到所在光标正下方
+                退出：:wq 保存退出 :q! 强制退出
+
+
+        删除：rm -rf 文件
+        打包压缩文件： 
+			tar -zcvf archive.tar.gz dir1 创建一个gzip格式的压缩包 ） 要打包的压缩文件
+			tar -jcvf archive.tar.bz2 dir1 创建一个gzip格式的压缩包 ） 要打包的压缩文件
+        解压压缩文件：
+            tar jxvf 压缩包的名字bz2 -C 解压目录（解压到指定目录）
+			tar -zxvf archive.tar.gz 解压一个gzip格式的压缩包 
+    权限命令
+        修改：
+             数字设定法
+             chmod 764
+                r:4
+                w:2
+                x:1
+
+    YUM
+        更新yum：   yum -y install wget
+        下载安装一个rpm包：yum install package_name
+
+    APT
+        安装/更新一个 deb 包 :apt-get install package_name
+
+    挂载
+        挂载到一个盘： mount /dev/hda2 /mnt/hda2  确定/mnt/hda2
+    磁盘空间
+        显示已挂载的分区列表： df -h
+    网络
+        重启网络配置信息：service network restate
+
+
+    系统
+        关机
+            关闭系统：shutdown -h now  / init 0 /telinit 0
+            重启：shutdown -r now   / reboot
+            注消：logout
+        系统信息
+            日期：date
+            显示内核信息：uname -r
+            
+        查看端口：netstat -nlp|grep 5601(端口号)
+        查看进程：ps -ef|grep kibana
+    删除执行中的程序
+        kill -9 123(进程id)
+		
+		
+		
+		
+	个别问题记载
+		当前用户变量配置 当前用户下（非root） , 在 profile或 ~/.bashrc 写配置变量，只对当前用户有效
+	
+	测试ip是否开通
+		telnet ip port  执行telnet指令开启终端机阶段作业，并登入远端主机。
+	查看进程
+		ps -ef | grep kibana  
+	查看端口
+		netstat -nlp |grep 5601  
+		lsof -i :5601  查看端口
+	文件传输
+		yum install lrzsz
+			上传或者下载 rz和sz命令
+	防火墙
+		firewall-cmd --state 查看
+		systemctl stop firewalld.service 停止
+	查看rpm服务
+		rpm -ql mysql-server
+		
+		
+		
+		
+		
+
+
+
+

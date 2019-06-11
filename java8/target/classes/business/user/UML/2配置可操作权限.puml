@@ -1,0 +1,17 @@
+@startuml
+title : 配置可操作权限
+"crmRoleAuthorityController.saveRolePremession()" -> "crmRoleAuthorityController.saveRolePremession()" : 参数校验
+"crmRoleAuthorityController.saveRolePremession()" -> "crmRoleAuthroityOptProvider.insertRolePremession()" :
+note left : 参数 resourceIds, roleId, rolePremessionType, sessionInfo
+
+
+"crmRoleAuthroityOptProvider.insertRolePremession()" -> "crmRolePremessionService.insertRolePremession()" :
+
+"crmRolePremessionService.insertRolePremession()" -> "crmRolePremessionService.insertRolePremession()" : 参数校验\n检查角色
+note left :初始化角色权限属性clearRolePremessionProperty()\n新增角色权限\n更新岗位权限\n日志保存
+
+"crmRolePremessionService.insertRolePremession()" -> "crmRolePremessionDao.insertRolePremession()" :　xml sql
+
+"crmRolePremessionDao.insertRolePremession()" -> "crmRolePremessionDao.insertRolePremession()" : 参数校验
+
+@enduml
