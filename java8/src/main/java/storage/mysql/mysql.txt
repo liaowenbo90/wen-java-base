@@ -1,3 +1,6 @@
+分类
+	聚簇索引：数据存储的物理位置为顺序  ，提高多行检索速度
+	非聚簇索引：							提高单行检索速度
 索引优点
 	唯一索引，保证每行数据的唯一性
 	可以大大加快数据检索的速度
@@ -7,3 +10,48 @@
 	索引要动态维护
 	占物理空间
 	创建、维护的时间会随着数据增多而增多
+	
+索引使用
+
+	drop table mytable;
+
+	CREATE TABLE mytable(  
+	 
+	ID INT NOT NULL,   
+	 
+	username VARCHAR(16) NOT NULL,
+
+	INDEX indexName (username(16))
+	 
+	);  
+
+	-- 添加普通索引 
+
+	CREATE INDEX indexName ON mytable(username(16)); 
+
+	alter table mytable add index indexName(username(16));
+
+	create index indexName on mytable(username(16));
+
+
+	select * from mytable;
+
+	-- 添加唯一索引
+
+	create unique index indexName2 on mytable(username(16));
+
+	alter table mytable add unique index indexName3 (username(16));
+
+	-- 删除索引
+
+	alter table mytable drop index indexName3;
+	drop index indexName on mytable;
+	
+索引建立的几大原则
+	最左前缀匹配原则，数据库是一直向右匹配到范围查询
+	=和in 可以乱序
+	尽量扩展索引，不要新建索引
+	经常存取的列避免建立索引
+	尽量不要留null值
+	
+	
