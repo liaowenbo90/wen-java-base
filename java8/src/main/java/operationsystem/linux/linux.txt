@@ -33,7 +33,8 @@ linux基本命令
             more :回车、空格控制
             less:上翻、下翻
         改变文件所属及下级：chown -R user1 file1
-		改变文件所属组：chgrp dev otp_src_19.3.tar.gz 
+		更改属组与用户组	chown mysql:mysql -R /var/lib/mysql 
+		改变文件所属组：chgrp dev otp_src_19.3.tar.gz  
         修改：vim/vi
             vim
                 显示行: :set number
