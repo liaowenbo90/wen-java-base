@@ -18,13 +18,13 @@
 		
 			安装 rabbitMq				
 				vim /etc/yum.repos.d/rabbitmq-erlang.repo
-				[rabbitmq-erlang]
-				name=rabbitmq-erlang
-				baseurl=https://dl.bintray.com/rabbitmq/rpm/erlang/20/el/7
-				gpgcheck=1
-				gpgkey=https://www.rabbitmq.com/rabbitmq-release-signing-key.asc
-				repo_gpgcheck=0
-				enabled=1
+					[rabbitmq-erlang]
+					name=rabbitmq-erlang
+					baseurl=https://dl.bintray.com/rabbitmq/rpm/erlang/20/el/7
+					gpgcheck=1
+					gpgkey=https://www.rabbitmq.com/rabbitmq-release-signing-key.asc
+					repo_gpgcheck=0
+					enabled=1
 			 
 				yum install erlang
 				 
@@ -42,6 +42,8 @@
 			rpm安装目录
 			cd /usr/lib/rabbitmq/bin
 			
+			
+			
 			使用rabbitctl添加用户
 				第一、添加mq用户并设置密码
 
@@ -54,4 +56,20 @@
 				1
 				root@live-mq-01:~ # rabbitmqctl set_user_tags mq administrator
 					
-					
+			基本操作
+				/usr/lib/rabbitmq/lib/rabbitmq_server-3.6.15/sbin
+				
+				rabbitmq的日志在目录：/var/log/rabbitmq/rabbit@[hostname].log下
+				
+				service rabbitmq-server stop 会将节点及应用程序同时关闭。
+
+				service rabbitmq-server start 会将节点及应用程序同时启动。、
+				停止rabbitmq轻而易举只需运行：./rabbitmqctl stop_app    
+
+				启动rabbitmq运行：./rabbitmq start_app
+				
+				查看端口是否被占用 netstat -lntup
+				查看防火墙是否被开启 firewall-cmd --state
+				
+
+				

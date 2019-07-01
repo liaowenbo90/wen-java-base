@@ -110,7 +110,17 @@ linux基本命令
 		systemctl stop firewalld.service 停止
 	查看rpm服务
 		rpm -ql mysql-server
+	查看状态
+		systemctl stauts mysqld
+	查看文件大小
+		ls -lht
+	查看所有端口
+		netstat -lntup
+	可以查看所有用户的列表
+		cat /etc/passwd 
 		
+		
+	
 		
 		
 		

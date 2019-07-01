@@ -28,4 +28,31 @@ redis 和 memcached 的区别
 redis 持久化
 	快照 
 	
-				
+redis安装
+	linux 单机
+		$ wget http://download.redis.io/releases/redis-2.8.17.tar.gz
+		$ tar xzf redis-2.8.17.tar.gz
+		$ cd redis-2.8.17
+		$ make
+		redis修改持久化路径和日志路径
+			logfile /data/redis_cache/logs/redis.log    #日志路径
+			dir /data/redis_cache       
+		启动
+			$ cd src
+			$ ./redis-server
+		配置启动
+			$ cd src
+			$ ./redis-server ../redis.conf
+			$ cd src
+		客户端检查
+			$ ./redis-cli
+			redis> set foo bar
+			OK
+			redis> get foo
+			"bar"
+		
+		
+		bug	存储报错
+			启动redis-cli 后 输入 config set stop-writes-on-bgsave-error no
+	
+	

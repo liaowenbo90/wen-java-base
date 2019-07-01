@@ -30,7 +30,9 @@ zookeeper
 		原子性	事务一致性
 		单一系统映像 不论哪一台服务的数据模型都是一致的
 		可靠性 更改的结果会被持久化
-	
+	设计目标
+		简单的数据模型 简单的数据模型,在内存中高吞吐量和低延迟
+		可构建集群 
 	集群角色介绍
 		最典型集群模式 ：master/slave 主备模式
 			master提供写 slave 提供读，其它服务器通过异步复制获取master数据
@@ -38,6 +40,9 @@ zookeeper
 				leader 集群内部服务的调度者
 				follow	转发事务请求给leader ,参预leader选举
 				observer 不参与选举leader过程
+		leader 选举
 		
-			
+	ZAB 原子广播
+		一种通用的分布式一致性算法，它是一种特别为Zookeeper设计的崩溃可恢复的原子消息广播算法。
+		
 	
