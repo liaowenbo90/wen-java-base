@@ -1,0 +1,69 @@
+maven
+	快速构建工具（编译、测试、打包），可跨平台
+	依赖管理工具、管理类库（管理jar依赖、解决冲突）
+	win安装
+		配置 MAVEN_HOME PATH环境变量
+		cmd mvn -vesion
+	setting.xml
+		localRepository 本地仓库位置
+		interativeMode true/false 交互模式（是否志用户交互取得输入）
+		offline true/false 离线模式
+		pluginGroup 插件分组
+		proxies 代理 profiles多代理配置 环境切换
+		servers 配置凭证
+		mirrors 下载镜像 为仓库配置下载镜像列表 
+		profiles 个性化配置--配置私服地址
+	pom.xml
+		<modelVersion>4.0.0</modelVersion> maven2、3只能是4.0.0版本
+		<groupId>com.apthech.maven</groupId>组 ID  所属项目组 ，规则：公司名+项目名
+		<artifaceId>hello-world</apthech> ：构件 ID 当前项目在组中的唯一id 一般maven项目都是分块的
+		version：版本号
+		packaging：打包方式，默认为 jar  另外二个 war、pom
+		scope 依赖的范围、
+		exclusions  用来排除传递性依赖、
+		optional  标记依赖是否可选。如果标记为可选，那么 Maven 不会传递依赖。
+	maven 项目创建 
+		web 
+		new - module -maven - create archetype - maven-archetype-webapp 
+		
+		1、src/main/java 目录下放置项目主代码
+		2、src/main/resources 目录下放置项目主代码配置文件
+		3、src/test/java 目录下放置测试代码
+		4、src/test/resources 目录下放置测试资源文件
+		5、src/main/webapp 目录下放置 web-root 信息
+		
+		
+		mvn clean compile  编译本项目  的 class 文件，放 在 target 目录下
+		mvn clean test   执行单元测试
+		mvn clean package 打包项目  的 jar 或者 war
+		mvn clean install   （安装项目 jar 或者 war，到本地仓库中
+		
+		项目部署到 web 服务器（Jetty、Tomcat）
+		
+		jar
+			new - module - maven - quickstart
+maven生命周期
+	括编译、构建、测试、发布、报告
+	
+maven 坐标依赖
+	传递性依赖
+	依赖传递
+	依赖范围
+		scope 依赖的范围、
+	依赖的调解
+		exclusions  用来排除传递性依赖、
+	可选依赖
+		optional  标记依赖是否可选。如果标记为可选，那么 Maven 不会传递依赖。
+maven 仓库
+	本地仓库 
+		本地仓库没有构建的时候，都会从中央仓库下载构建。本地仓库就一个，但是可配置多个远程仓库。
+私服
+	私服是另外一种特殊的远程仓库，为了节省宽带和时间，一般在局域网中架设私服，用其代理所有的外部远程仓库。内部项目还能部署到私服，
+	远程仓库配置、认证、部署
+		<repositories></
+		<server></
+镜像
+	如果仓库 X 可以获取仓库 Y 存储的所有内容，那么 X 就可以认为是 Y 的一个镜像。
+	
+		
+	
