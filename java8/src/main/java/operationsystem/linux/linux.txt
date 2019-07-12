@@ -110,6 +110,9 @@ linux基本命令
 		systemctl stop firewalld.service 停止
 	查看rpm服务
 		rpm -ql mysql-server
+		
+		ps -aux | grep redis
+		
 	查看状态
 		systemctl stauts mysqld
 	查看文件大小
@@ -118,6 +121,16 @@ linux基本命令
 		netstat -lntup
 	可以查看所有用户的列表
 		cat /etc/passwd 
+		
+    给nexus用户添加sudo权限
+		1、给root写的权限
+		chmod u+w /etc/sudoers
+		2、编辑/etc/sudoers，在root下添加nexus用户权限
+		vi /etc/sudoers
+		添加：nexus ALL=(ALL) ALL
+		3、保存后撤回写的权限
+		chmod u-w /etc/sudoers
+
 		
 		
 	

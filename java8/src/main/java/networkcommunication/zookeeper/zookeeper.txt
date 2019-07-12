@@ -45,4 +45,38 @@ zookeeper
 	ZAB 原子广播
 		一种通用的分布式一致性算法，它是一种特别为Zookeeper设计的崩溃可恢复的原子消息广播算法。
 		
+		
+	zookeeper安装
+		单机
+			下载zookeeper包 上传到 linux  http://mirror.bit.edu.cn/apache/zookeeper/ 
+			 lrzsz 上传
+			 
+			 解压 tar -zxvf zookeeper-3.4.12-alpha.tar.gz  修改 mv zookeeper-3.4.12 zookeeper  删除 rm -rf zookeeper-3.4.12.tar.gz
+			 
+			 配置
+				进入zookeeper 创建 data目录  mkdir data,pwd 取到路径 
+				进入/zookeeper/conf 目录复制 zookeeper.cfg 命名 zoo.cfg , cp zoo_sample.cfg zoo.cfg
+				修改zoo.cfg配置 vim zoo.cfg ,dataDir=/usr/local/zookeeper/data
+			启动测试
+				./zkServer.sh start
+				./zkServer.sh status
+				查看网络状态 netstat -lntup  看2181 端口
+				
+			客户端
+				./zkCli.sh 
+					查看某个节点 ls /node1
+					创建节点 create /node1 
+					更新节点 set /node1 "set node1"
+					获取节点 get /node1
+					查看节点状态 stat /node1
+					删除节点 delete /node1
+					
+			
+				
+			 
+			 
+			 
+		
+		
+		
 	
