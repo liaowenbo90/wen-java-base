@@ -82,7 +82,7 @@ linux/mysql安装
 	 执行简单的SQL命令
 	连接服务 
 	[root@host]# mysql -uroot -p 
-
+	root 
 	[root@host]# mysqladmin -u root password "new_password";
 	设置对外开外权限
 	grant all privileges on *.* to root@"%" identified by "new password"
@@ -96,6 +96,7 @@ linux/mysql安装
 		GRANT ALL PRIVILEGES ON `db_user_lwb`.* TO 'pms'@'%' IDENTIFIED BY 'pms0817';
 		-- 创建用户分配权限
 		grant select,insert,update,delete,create,drop on db_user_lwb.* to 'jee'@'%' identified by '123'；
+		GRANT privileges ON databases.tablename TO 'bobo'@'111.230.21.80' INDENTIFIED BY '1234aa';
 
 
 

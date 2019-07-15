@@ -84,10 +84,16 @@ linux基本命令
             日期：date
             显示内核信息：uname -r
             
-        查看端口：netstat -nlp|grep 5601(端口号)
-        查看进程：ps -ef|grep kibana
+        查看端口：
+			netstat -nlp|grep 5601(端口号)
+			lsof -i :5601  查看端口
+			查看所有端口
+				netstat -lntup
+        查看进程：ps -ef|grep kibana					
     删除执行中的程序
         kill -9 123(进程id)
+		
+		sudo fuser -k 2181/tcp
 		
 		
 		
@@ -97,11 +103,7 @@ linux基本命令
 	
 	测试ip是否开通
 		telnet ip port  执行telnet指令开启终端机阶段作业，并登入远端主机。
-	查看进程
-		ps -ef | grep kibana  
-	查看端口
-		netstat -nlp |grep 5601  
-		lsof -i :5601  查看端口
+
 	文件传输
 		yum install lrzsz
 			上传或者下载 rz和sz命令
@@ -117,8 +119,7 @@ linux基本命令
 		systemctl stauts mysqld
 	查看文件大小
 		ls -lht
-	查看所有端口
-		netstat -lntup
+
 	可以查看所有用户的列表
 		cat /etc/passwd 
 		
