@@ -1,11 +1,0 @@
-
-V
-squid:S1066"9Replace this use of System.out or System.err by a logger.(ó‡Ûò8àÎ¹¥´-
-[
-squid:S106"9Replace this use of System.out or System.err by a logger.(‘ÏÒøÿÿÿÿ8şÈë«´-
-qsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ï°òL
-V
-squid:S106/"9Replace this use of System.out or System.err by a logger.(È¸ÆÔ8Ã—¼¥´-
-V
-squid:S106"9Replace this use of System.out or System.err by a logger.(öÿ­8¢µĞ«´-
-ksquid:S2095"HUse try-with-resources or close this "Connection" in a "finally" clause.(‹«ÖÖøÿÿÿÿ8øÎë¡´-

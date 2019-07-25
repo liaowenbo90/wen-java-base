@@ -1,0 +1,25 @@
+
+Fsquid:S1481#"0Remove this unused "comsumerTag" local variable.(Ä”!
+gsquid:CommentedOutCodeLineY"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
+rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¶ÊÀĞ
+bsquid:CommentedOutCodeLineH"<This block of commented-out lines of code should be removed.(©ç
+gsquid:CommentedOutCodeLine4"<This block of commented-out lines of code should be removed.(È››ııÿÿÿÿ
+gsquid:CommentedOutCodeLine6"<This block of commented-out lines of code should be removed.(ÅàÎÿüÿÿÿÿ
+O
+squid:S106-"9Replace this use of System.out or System.err by a logger.(¥İº°
+gsquid:CommentedOutCodeLineC"<This block of commented-out lines of code should be removed.(×§ŠÕüÿÿÿÿ
+bsquid:CommentedOutCodeLineK"<This block of commented-out lines of code should be removed.(ÒĞÇÉ
+O
+squid:S106!"9Replace this use of System.out or System.err by a logger.(ïŠ•À
+bsquid:CommentedOutCodeLineP"<This block of commented-out lines of code should be removed.(µ³£¡
+gsquid:CommentedOutCodeLineR"<This block of commented-out lines of code should be removed.(£ÓéËúÿÿÿÿ
+O
+squid:S106"9Replace this use of System.out or System.err by a logger.(öÿ­
+bsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(î¯ÔÉ
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(‘ÏÒøÿÿÿÿ
+bsquid:CommentedOutCodeLine<"<This block of commented-out lines of code should be removed.(µ³£¡
+bsquid:CommentedOutCodeLine>"<This block of commented-out lines of code should be removed.(¼ó¨ß
+dsquid:S2095"HUse try-with-resources or close this "Connection" in a "finally" clause.(‹«ÖÖøÿÿÿÿ
+bsquid:CommentedOutCodeLineF"<This block of commented-out lines of code should be removed.(óÅÿÿ
+Csquid:S1481"",Remove this unused "autoAck" local variable.(ƒÄ°ˆ

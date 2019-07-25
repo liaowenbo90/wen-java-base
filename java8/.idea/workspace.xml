@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88e8ea0e-47d6-4f1a-84b7-07f8873fd77c" name="Default Changelist" comment="shell">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_rabbitmq_amqp_client_4_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_jpountz_lz4_lz4_1_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_kafka_clients_0_11_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_snappy_snappy_java_1_1_2_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_4_0.xml" afterDir="false" />
@@ -13,6 +20,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_8.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_8.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_rabbitmq_amqp_client_4_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_rabbitmq_amqp_client_4_1_0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_1_6_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_1_6_Final.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" afterDir="false" />
@@ -61,10 +69,84 @@
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_6_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_6_2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_23.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_23.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/0/204fd17846d0dbf8130c17e28e6a7a5215c462d2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/6/2684e11404fcf71c9e5111b1fee9da231634ac87" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/9/d97b1c1ec3c5ae9af547c1d9e1dda42e30b1f031" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java8.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java8.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/base/io/nio/NettyServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/base/io/nio/NettyServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storage/maven/maven-web/helloworld-service/src/main/java/com/jx/helloworld/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storage/maven/maven-web/helloworld-service/src/test/java/com/jx/helloworld/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/business/user/UML/1自定义角色添加.puml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/business/user/UML/2配置可操作权限.puml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/business/user/UML/3添加自定义角色与类目.puml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/business/user/UML/4店铺添加类目对应自定义权限.puml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/business/user/UML/5删除店铺类目与权限关系.puml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/business/user/UML/6前端加载权限菜单.puml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/business/user/png/1自定义角色添加.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/business/user/png/2配置可操作权限.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/business/user/png/3添加自定义角色与类目.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/business/user/png/4店铺添加类目对应自定义权限.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/business/user/png/5删除店铺类目与权限关系.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/business/user/png/6前端加载自定义菜单.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/base/io/bio/Ioclient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/base/io/bio/Ioclient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/base/io/bio/Ioserver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/base/io/bio/Ioserver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/base/io/nio/NIoServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/base/io/nio/NIoServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/base/io/nio/NettyServer$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/base/io/nio/NettyServer$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/base/io/nio/NettyServer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/base/io/nio/NettyServer$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/base/io/nio/NettyServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/base/io/nio/NettyServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/base/java8/samples/builtInfunction/Builttest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/base/java8/samples/builtInfunction/Builttest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/base/java8/samples/concurrent/Atomic1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/base/java8/samples/concurrent/Atomic1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/base/java8/samples/concurrent/CompletableFuture1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/base/java8/samples/concurrent/CompletableFuture1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/base/java8/samples/concurrent/ConcurrentHashMap1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/base/java8/samples/concurrent/ConcurrentHashMap1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/base/java8/samples/concurrent/Executors1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/base/java8/samples/concurrent/Executors1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/base/java8/samples/concurrent/Executors2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/base/java8/samples/concurrent/Executors2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/base/java8/samples/concurrent/Executors3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/base/java8/samples/concurrent/Executors3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/base/java8/samples/concurrent/Lock1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/base/java8/samples/concurrent/Lock1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/base/java8/samples/concurrent/Lock2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/base/java8/samples/concurrent/Lock2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/base/java8/samples/concurrent/Lock3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/base/java8/samples/concurrent/Lock3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/base/java8/samples/concurrent/Lock4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/base/java8/samples/concurrent/Lock4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/base/java8/samples/concurrent/Lock5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/base/java8/samples/concurrent/Lock5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/base/java8/samples/concurrent/Lock6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/base/java8/samples/concurrent/Lock6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/base/java8/samples/concurrent/LongAccumulator1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/base/java8/samples/concurrent/LongAccumulator1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/base/java8/samples/concurrent/LongAdder1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/base/java8/samples/concurrent/LongAdder1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/base/java8/samples/concurrent/Semaphore1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/base/java8/samples/concurrent/Semaphore1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/base/java8/samples/concurrent/Semaphore2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/base/java8/samples/concurrent/Semaphore2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/base/java8/samples/concurrent/Synchronized1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/base/java8/samples/concurrent/Synchronized1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/base/java8/samples/concurrent/Synchronized2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/base/java8/samples/concurrent/Synchronized2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/base/java8/samples/concurrent/Threads1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/base/java8/samples/concurrent/Threads1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/base/java8/samples/lambda/Lambda1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/base/java8/samples/lambda/Lambda1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/base/java8/samples/lambda/Lambda2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/base/java8/samples/lambda/Lambda2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/base/java8/samples/lambda/Lambda3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/base/java8/samples/lambda/Lambda3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/base/java8/samples/lambda/Lambda4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/base/java8/samples/lambda/Lambda4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/base/java8/samples/lambda/Lambda5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/base/java8/samples/lambda/Lambda5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/base/java8/samples/misc/CheckedFunctions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/base/java8/samples/misc/CheckedFunctions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/base/java8/samples/misc/Concurrency1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/base/java8/samples/misc/Concurrency1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/base/java8/samples/misc/Files1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/base/java8/samples/misc/Files1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/base/java8/samples/misc/Maps1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/base/java8/samples/misc/Maps1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/base/java8/samples/misc/String1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/base/java8/samples/misc/String1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/base/java8/samples/stream/Optional1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/base/java8/samples/stream/Optional1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/base/java8/samples/stream/Optional2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/base/java8/samples/stream/Optional2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/base/java8/samples/stream/Streams1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/base/java8/samples/stream/Streams1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/base/java8/samples/stream/Streams10.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/base/java8/samples/stream/Streams10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/base/java8/samples/stream/Streams11.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/base/java8/samples/stream/Streams11.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/base/java8/samples/stream/Streams12.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/base/java8/samples/stream/Streams12.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/base/java8/samples/stream/Streams13.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/base/java8/samples/stream/Streams13.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/base/java8/samples/stream/Streams4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/base/java8/samples/stream/Streams4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/base/java8/samples/stream/Streams5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/base/java8/samples/stream/Streams5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/base/java8/samples/stream/Streams7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/base/java8/samples/stream/Streams7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/base/java8/samples/stream/Streams8.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/base/java8/samples/stream/Streams8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/base/java8/samples/stream/Streams9.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/base/java8/samples/stream/Streams9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/networkcommunication/rbbitMQ/code/Consumer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/networkcommunication/rbbitMQ/code/Consumer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/networkcommunication/rbbitMQ/code/Producer.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/src/main/java/networkcommunication/kafka/example/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,35 +204,54 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-1394196040">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="8" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.102" value="1" />
+          <entry key="project.open.time.104" value="1" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.3" value="2" />
+          <entry key="project.open.time.40" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="10" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="4" />
+          <entry key="Image" value="7" />
+          <entry key="JAVA" value="12" />
+          <entry key="PLAIN_TEXT" value="6" />
+          <entry key="XML" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="30" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/networkcommunication/rabbitMQ/code/Consumer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="26" column="33" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3/repo/com/rabbitmq/amqp-client/4.1.0/amqp-client-4.1.0.jar!/com/rabbitmq/client/AMQP.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="45" column="24" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/networkcommunication/rabbitMQ/code/Producer.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/networkcommunication/kafka/example/SimpleProducer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="440">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/networkcommunication/kafka/example/SimpleConsumer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="550">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -159,41 +260,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3/repo/com/rabbitmq/amqp-client/4.1.0/amqp-client-4.1.0.jar!/com/rabbitmq/client/MessageProperties.class">
+        <entry file="jar://D:/maven/repo2/org/apache/kafka/kafka-clients/0.11.0.0/kafka-clients-0.11.0.0.jar!/org/apache/kafka/clients/consumer/KafkaConsumer.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+            <state relative-caret-position="4268">
+              <caret line="254" column="22" selection-start-line="254" selection-start-column="13" selection-end-line="254" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3/repo/com/rabbitmq/amqp-client/4.1.0/amqp-client-4.1.0.jar!/com/rabbitmq/client/Channel.class">
+        <entry file="jar://D:/maven/repo2/org/apache/kafka/kafka-clients/0.11.0.0/kafka-clients-0.11.0.0.jar!/org/apache/kafka/common/serialization/StringDeserializer.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="154" column="11" selection-start-line="154" selection-start-column="11" selection-end-line="154" selection-end-column="11" />
+            <state relative-caret-position="132">
+              <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3/repo/com/rabbitmq/amqp-client/4.1.0/amqp-client-4.1.0.jar!/com/rabbitmq/client/impl/recovery/AutorecoveringChannel.class">
+        <entry file="jar://D:/maven/repo2/com/fasterxml/jackson/core/jackson-databind/2.9.8/jackson-databind-2.9.8-sources.jar!/com/fasterxml/jackson/databind/ser/std/StringSerializer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="653" column="29" lean-forward="true" selection-start-line="653" selection-start-column="29" selection-end-line="653" selection-end-column="29" />
+            <state relative-caret-position="242">
+              <caret line="22" column="35" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3/repo/com/rabbitmq/amqp-client/4.1.0/amqp-client-4.1.0.jar!/com/rabbitmq/client/impl/recovery/AutorecoveringConnection.class">
+        <entry file="jar://D:/maven/repo2/org/apache/kafka/kafka-clients/0.11.0.0/kafka-clients-0.11.0.0.jar!/org/apache/kafka/common/serialization/StringSerializer.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="53" column="48" selection-start-line="53" selection-start-column="48" selection-end-line="53" selection-end-column="48" />
-              <folding>
-                <element signature="e#22345#22346#0" expanded="true" />
-                <element signature="e#22397#22398#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="132">
+              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -218,10 +315,15 @@
       <find>Clock</find>
       <find>进程</find>
       <find>Service</find>
+      <find>offset</find>
+      <find>sent</find>
     </findStrings>
     <replaceStrings>
       <replace />
     </replaceStrings>
+    <dirStrings>
+      <dir>E:\study\project\learnspace\wen-java-base\java8\src\main\java\networkcommunication\kafka</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -238,9 +340,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/base/collectionof/MethodDemo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/base/collectionof/集合.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/base/threadlock/syn/RunnableDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/base/threadlock/syn/Singgleton.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/base/threadlock/syn/SinggletonTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/base/threadlock/syn/同步.txt" />
@@ -285,10 +384,13 @@
         <option value="$PROJECT_DIR$/src/main/resources/business/user/UML/6前端加载自定义菜单.puml" />
         <option value="$PROJECT_DIR$/src/main/resources/business/user/UML/3添加自定义角色与类目.puml" />
         <option value="$PROJECT_DIR$/src/main/resources/business/user/UML/4店铺添加类目对应自定义权限.puml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/networkcommunication/rbbitMQ/code/Consumer.java" />
         <option value="$PROJECT_DIR$/src/main/java/networkcommunication/rbbitMQ/code/Producer.java" />
         <option value="$PROJECT_DIR$/src/main/java/networkcommunication/rabbitMQ/code/Producer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/networkcommunication/kafka/example/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/networkcommunication/kafka/example/SimpleProducer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/networkcommunication/kafka/example/SimpleConsumer.java" />
       </list>
     </option>
   </component>
@@ -301,7 +403,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="userSettingsFile" value="C:\Users\hasee\.m2\settings-aliyun.xml" />
+        <option name="userSettingsFile" value="C:\Users\liaowb\.m2\settings-aliyun.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -326,11 +428,14 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="93" />
-    <option name="y" value="64" />
-    <option name="width" value="1902" />
-    <option name="height" value="905" />
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="402" />
+    <option name="y" value="52" />
+    <option name="width" value="1940" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -340,8 +445,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -382,7 +485,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="networkcommunication" type="462c0819:PsiDirectoryNode" />
-              <item name="rabbitMQ" type="462c0819:PsiDirectoryNode" />
+              <item name="kafka" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="java8" type="b2602c69:ProjectViewProjectNode" />
@@ -391,8 +494,35 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="networkcommunication" type="462c0819:PsiDirectoryNode" />
-              <item name="rabbitMQ" type="462c0819:PsiDirectoryNode" />
-              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="kafka" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java8" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="networkcommunication" type="462c0819:PsiDirectoryNode" />
+              <item name="kafka" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+              <item name="SimpleProducer" type="1a9f42e2:ClassTreeNode" />
+            </path>
+            <path>
+              <item name="java8" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="operationsystem" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java8" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="java8" type="b2602c69:ProjectViewProjectNode" />
@@ -400,27 +530,86 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="java8" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="java8" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.fasterxml.jackson.core:jackson-databind:2.9.8" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="java8" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.fasterxml.jackson.core:jackson-databind:2.9.8" type="70bed36:NamedLibraryElementNode" />
+              <item name="jackson-databind-2.9.8.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java8" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.fasterxml.jackson.core:jackson-databind:2.9.8" type="70bed36:NamedLibraryElementNode" />
+              <item name="jackson-databind-2.9.8.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="databind" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java8" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.fasterxml.jackson.core:jackson-databind:2.9.8" type="70bed36:NamedLibraryElementNode" />
+              <item name="jackson-databind-2.9.8.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="databind" type="462c0819:PsiDirectoryNode" />
+              <item name="ser" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java8" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.fasterxml.jackson.core:jackson-databind:2.9.8" type="70bed36:NamedLibraryElementNode" />
+              <item name="jackson-databind-2.9.8.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="databind" type="462c0819:PsiDirectoryNode" />
+              <item name="ser" type="462c0819:PsiDirectoryNode" />
+              <item name="std" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java8" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.fasterxml.jackson.core:jackson-databind:2.9.8" type="70bed36:NamedLibraryElementNode" />
+              <item name="jackson-databind-2.9.8.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="databind" type="462c0819:PsiDirectoryNode" />
+              <item name="ser" type="462c0819:PsiDirectoryNode" />
+              <item name="std" type="462c0819:PsiDirectoryNode" />
+              <item name="StringSerializer" type="1a9f42e2:ClassTreeNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultPlantUmlFileTemplate" value="UML Sequence" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="StringDeserializer&#9;PSI&#9;JAVA://org.apache.kafka.common.serialization.StringDeserializer&#10;StringSerializer&#9;PSI&#9;JAVA://org.apache.kafka.common.serialization.StringSerializer" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560249860554" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563273806147" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../base/java8/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\study\project\learnspace\wen-java-base\java8\src\main\java\storage\redis\resource" />
+      <recent name="E:\study\project\learnspace\base\java8\src\main\resources\business\user\png" />
+      <recent name="E:\study\project\learnspace\base\java8\src\main\resources\business\user" />
+      <recent name="E:\study\project\learnspace\base\java8\src\main\resources" />
+      <recent name="E:\study\project\learnspace\base\java8\src\main\java\com\base\jvm\tuning" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.base" />
     </key>
@@ -430,13 +619,6 @@
       <recent name="E:\study\project\learnspace\base\java8\src\main\java\com\base\threadlock\mulitithreading\mapping" />
       <recent name="E:\study\project\learnspace\base\java8\src\main\java\com\base\threadlock\syn" />
       <recent name="E:\study\project\learnspace\base\java8\src\main\java\com\base\javabase" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\study\project\learnspace\base\java8\src\main\resources\business\user\png" />
-      <recent name="E:\study\project\learnspace\base\java8\src\main\resources\business\user" />
-      <recent name="E:\study\project\learnspace\base\java8\src\main\resources" />
-      <recent name="E:\study\project\learnspace\base\java8\src\main\java\com\base\jvm\tuning" />
-      <recent name="E:\study\project\learnspace\base\java8\src\main\java\com\base\jvm\mapping" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -451,7 +633,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Producer">
+  <component name="RunManager" selected="Application.SimpleConsumer">
     <configuration name="Consumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="networkcommunication.rabbitMQ.code.Consumer" />
       <module name="java8" />
@@ -494,13 +676,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ScheduledThreadPoolDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.base.threadlock.mulitithreading.Executor.ScheduledThreadPoolDemo" />
+    <configuration name="SimpleConsumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="networkcommunication.kafka.example.SimpleConsumer" />
       <module name="java8" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.base.threadlock.mulitithreading.Executor.*" />
+          <option name="PATTERN" value="networkcommunication.kafka.example.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -508,13 +690,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.base.keyword.Test" />
+    <configuration name="SimpleProducer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="networkcommunication.kafka.example.SimpleProducer" />
       <module name="java8" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.base.keyword.*" />
+          <option name="PATTERN" value="networkcommunication.kafka.example.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -564,19 +746,19 @@
     </configuration>
     <list>
       <item itemvalue="Spring Boot.Java8Application" />
-      <item itemvalue="Application.ScheduledThreadPoolDemo" />
-      <item itemvalue="Application.Test" />
       <item itemvalue="Application.Lambda1" />
       <item itemvalue="Application.Producer" />
       <item itemvalue="Application.Consumer" />
+      <item itemvalue="Application.SimpleProducer" />
+      <item itemvalue="Application.SimpleConsumer" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SimpleConsumer" />
+        <item itemvalue="Application.SimpleProducer" />
         <item itemvalue="Application.Producer" />
         <item itemvalue="Application.Consumer" />
         <item itemvalue="Application.Lambda1" />
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.ScheduledThreadPoolDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -618,6 +800,16 @@
       <workItem from="1558939935175" duration="22237000" />
       <workItem from="1560159236313" duration="13851000" />
       <workItem from="1560239957388" duration="5781000" />
+      <workItem from="1560250067096" duration="2301000" />
+      <workItem from="1561452172072" duration="787000" />
+      <workItem from="1561541609608" duration="701000" />
+      <workItem from="1561545851013" duration="155000" />
+      <workItem from="1561979130131" duration="2522000" />
+      <workItem from="1563181689099" duration="1007000" />
+      <workItem from="1563186162986" duration="691000" />
+      <workItem from="1563265778986" duration="6094000" />
+      <workItem from="1563328108050" duration="2492000" />
+      <workItem from="1563360172890" duration="587000" />
     </task>
     <task id="LOCAL-00001" summary="jsp内置对象">
       <created>1556524942242</created>
@@ -749,7 +941,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="216834000" />
+    <option name="totallyTimeSpent" value="234171000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -761,9 +953,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2081545" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23497854" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -773,13 +966,13 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3052023" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.2612717" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.26589596" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.35953757" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32947975" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3299748" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32947975" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
@@ -789,14 +982,14 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="PlantUML" order="3" weight="0.26612023" />
+      <window_info anchor="right" id="PlantUML" order="3" weight="0.26609442" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Bean Validation" order="9" />
-      <window_info anchor="right" id="Maven Projects" order="10" weight="0.27501702" />
+      <window_info anchor="right" id="Bean Validation" order="9" weight="0.3299356" />
+      <window_info anchor="right" id="Maven Projects" order="10" weight="0.16577253" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20762423" />
@@ -862,186 +1055,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="shell" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/base/jvm/jvm - java 类的加载机制.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/base/jvm/jvm 总体梳理.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="64" column="13" lean-forward="true" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/base/collectionof/集合.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="24" column="25" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/base/threadlock/Lock/概要">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/operationsystem/linux/linux.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="946">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/operationsystem/linux/shell/example.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6864">
-          <caret line="312" column="4" selection-start-line="312" selection-start-column="4" selection-end-line="312" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/base/keyword/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/base/keyword/关键字总结.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/operationsystem/linux/shell/shell.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1298">
-          <caret line="59" column="13" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/base/java8/samples/lambda/Lambda2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/operationsystem/linux/docker/docker.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/operationsystem/linux/mapping/文件权限.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/operationsystem/linux/mapping/操作系统.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/operationsystem/linux/mapping/linux文件目录.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="jar://D:/application/jdk/jdk8/bin/src.zip!/java/util/jar/Attributes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="502" column="26" lean-forward="true" selection-start-line="502" selection-start-column="26" selection-end-line="502" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/base/java8/samples/nashorn/Nashorn1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/networkcommunication/dubbo.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/base/java8/samples/lambda/Interface1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/base/java8/samples/lambda/Lambda1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/base/java8/java8特性概念">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/base/java8/samples/stream/Streams13.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/application/jdk/jdk8/bin/src.zip!/java/util/Collections.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2992">
-          <caret line="174" column="15" selection-start-line="174" selection-start-column="15" selection-end-line="174" selection-end-column="15" />
-          <folding>
-            <element signature="e#7284#7285#0" expanded="true" />
-            <element signature="e#7312#7313#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/application/jdk/jdk8/bin/src.zip!/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9944">
-          <caret line="475" column="45" selection-start-line="475" selection-start-column="45" selection-end-line="475" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/application/jdk/jdk8/bin/src.zip!/java/util/Comparator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2662">
-          <caret line="149" column="12" selection-start-line="149" selection-start-column="12" selection-end-line="149" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/business/user/aa.puml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/base/java8/samples/stream/Optional1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/business/user/UML/1自定义角色添加.puml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/business/user/png/1自定义角色添加.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/business/user/UML/6前端加载权限菜单.puml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -1103,9 +1116,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
-          <folding>
-            <element signature="e#427#428#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1116,13 +1126,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/networkcommunication/rabbitMQ/RbbitMQ.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="39" column="47" lean-forward="true" selection-start-line="39" selection-start-column="47" selection-end-line="39" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/business/user/UML/5删除店铺类目与权限关系.puml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -1130,38 +1133,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="47" column="37" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3/repo/com/rabbitmq/amqp-client/4.1.0/amqp-client-4.1.0.jar!/com/rabbitmq/client/AMQP.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="45" column="24" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3/repo/com/rabbitmq/amqp-client/4.1.0/amqp-client-4.1.0.jar!/com/rabbitmq/client/MessageProperties.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
-          <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3/repo/com/rabbitmq/amqp-client/4.1.0/amqp-client-4.1.0.jar!/com/rabbitmq/client/Channel.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
+        <state relative-caret-position="3058">
           <caret line="154" column="11" selection-start-line="154" selection-start-column="11" selection-end-line="154" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3/repo/com/rabbitmq/amqp-client/4.1.0/amqp-client-4.1.0.jar!/com/rabbitmq/client/impl/recovery/AutorecoveringChannel.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="653" column="29" lean-forward="true" selection-start-line="653" selection-start-column="29" selection-end-line="653" selection-end-column="29" />
+        <state relative-caret-position="12892">
+          <caret line="653" column="29" selection-start-line="653" selection-start-column="29" selection-end-line="653" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -1169,30 +1158,192 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="53" column="48" selection-start-line="53" selection-start-column="48" selection-end-line="53" selection-end-column="48" />
-          <folding>
-            <element signature="e#22345#22346#0" expanded="true" />
-            <element signature="e#22397#22398#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/networkcommunication/rabbitMQ/Broker.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/networkcommunication/rabbitMQ/code/Consumer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="26" column="33" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="286">
+          <caret line="40" column="77" lean-forward="true" selection-start-line="40" selection-start-column="77" selection-end-line="40" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/networkcommunication/dubbo/dubbo工作原理.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/networkcommunication/dubbo/dubbo架构图解.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/networkcommunication/dubbo/rpc原理图.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/networkcommunication/dubbo/dubbo.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/base/concurrentcontainer/并发容器集合">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/base/designpatterns/behaviortype/chainofresponsibilitypattern/责任链模式概念">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3/repo/com/rabbitmq/amqp-client/4.1.0/amqp-client-4.1.0.jar!/com/rabbitmq/client/AMQP.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="45" column="24" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/networkcommunication/rabbitMQ/code/Producer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        <state relative-caret-position="616">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/networkcommunication/rabbitMQ/RbbitMQ.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1166">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/base/designpatterns/behaviortype/observerpattern/观察者模式概念">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/base/threadlock/Lock/DistributedReentrantLock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/base/threadlock/Lock/DistributedReentranLockTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/base/threadlock/Lock/redislock/RedisPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/base/threadlock/Lock/redislock/LockData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/networkcommunication/kafka/example/src/com.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/networkcommunication/kafka/example/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/base/threadlock/Lock/redislock/DistributedReentranLockTemplateImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/base/threadlock/Lock/redislock/CallBack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/storage/redis/resource/redis高并发.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/storage/redis/resource/redis高性能.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/storage/redis/resource/redis雪崩解决方案.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/storage/redis/resource/redis.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="45" column="20" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="61" column="38" selection-start-line="61" selection-start-column="38" selection-end-line="61" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/base/threadlock/Lock/redislock/CounDown.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/maven/repo2/org/apache/kafka/kafka-clients/0.11.0.0/kafka-clients-0.11.0.0.jar!/org/apache/kafka/clients/producer/ProducerConfig.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="56" column="76" selection-start-line="56" selection-start-column="62" selection-end-line="56" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/networkcommunication/kafka/example/SimpleProducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/networkcommunication/kafka/example/SimpleConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/maven/repo2/org/apache/kafka/kafka-clients/0.11.0.0/kafka-clients-0.11.0.0.jar!/org/apache/kafka/clients/consumer/KafkaConsumer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4268">
+          <caret line="254" column="22" selection-start-line="254" selection-start-column="13" selection-end-line="254" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/maven/repo2/org/apache/kafka/kafka-clients/0.11.0.0/kafka-clients-0.11.0.0.jar!/org/apache/kafka/common/serialization/StringDeserializer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/maven/repo2/com/fasterxml/jackson/core/jackson-databind/2.9.8/jackson-databind-2.9.8-sources.jar!/com/fasterxml/jackson/databind/ser/std/StringSerializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="22" column="35" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/maven/repo2/org/apache/kafka/kafka-clients/0.11.0.0/kafka-clients-0.11.0.0.jar!/org/apache/kafka/common/serialization/StringSerializer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
         </state>
       </provider>
     </entry>
