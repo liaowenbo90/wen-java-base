@@ -51,7 +51,7 @@ public class SimpleProducer {
         try {
             for (int i = 0; i < 10; i++) {
                 String msg = "Message" + i;
-                producer.send(new ProducerRecord("test2", msg));
+                producer.send(new ProducerRecord("test1", msg));
                 System.out.println("sent:" + msg);
             }
         } catch (Exception e) {

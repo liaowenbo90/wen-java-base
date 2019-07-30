@@ -132,9 +132,34 @@ linux基本命令
 		3、保存后撤回写的权限
 		chmod u-w /etc/sudoers
 
-		
-		
-	
+	rpm 命令
+		查询这个包是否已安装
+			rpm -q 包名
+			rpm -qa
+			-q 查询
+			-a all
+		查询已安装软件包和未安装软件包详细信息
+
+			rpm -qi 包名
+			rpm -qip 包全名
+			-i 查询软件信息
+			-p package，查询未安装包信息
+		查询软件包安装位置
+
+			rpm -ql 包名
+			-l 列表
+			-p 查询未安装包信息
+			
+	永久设置
+		1、修改profile文件：
+
+		修 改/etc/profile（对所有用户都是有效的）
+		#vi /etc/profile
+		在里面加入:
+		export PATH="$PATH:/home/xyz/Tesseract/bin"
+
+		2、 修改.bashrc文件：
+		修改~/.bashrc文件。  （每个用户目录下都有，ls -all，单独用户有效）
 		
 		
 		
