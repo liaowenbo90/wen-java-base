@@ -1,0 +1,169 @@
+es
+	rpm安装
+		下载安装公共签名密钥  rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
+		
+		从rpm安装存储库安装
+			在 目录/etc/yum.repos.d/ 创建 elasticsearch.repo 文件 内容。。
+				[elasticsearch-6.x]
+				name=Elasticsearch repository for 6.x packages
+				baseurl=https://artifacts.elastic.co/packages/6.x/yum
+				gpgcheck=1
+				gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch
+				enabled=1
+				autorefresh=1
+				type=rpm-md
+		下载并安装RPM
+			wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.3.2.rpm
+			wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.3.2.rpm.sha512
+			shasum -a 512 -c elasticsearch-6.3.2.rpm.sha512 
+			sudo rpm --install elasticsearch-6.3.2.rpm
+			
+			问题 
+				遇到错误1
+　　　　　　		-bash: shasum: command not found
+		　　　　解决方案：在CentOS上，“shasum”被称为“sha1sum”，运行下面命令修复此问题 
+		　　　　　　ln -s /usr/bin/sha1sum /usr/bin/shasum
+		　　　　遇到错误2
+		　　　　　　sha1sum: invalid option -- 'a'
+		　　　　解决方案：
+		　　　　　　yum install -y perl-Digest-SHA
+		启动
+			查看启动文式
+				ps -p 1
+				init
+					sudo chkconfig --add elasticsearch
+					可以使用以下service命令启动和停止Elasticsearch ：
+						sudo -i service elasticsearch start
+						sudo -i service elasticsearch stop
+				systemd
+					
+					sudo / bin / systemctl daemon-reload
+					sudo / bin / systemctl enable elasticsearch.service
+					Elasticsearch可以按如下方式启动和停止：
+						sudo systemctl start elasticsearch.service
+						sudo systemctl stop elasticsearch.service
+					检查是否正常运行
+						curl localhost:9200
+						
+			允许远程访问
+				修改 /etc/elasticsearch/elasticsearch.yml 
+				将它的值改成 network.host: 0.0.0.0
+	zip安装
+		wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-5.5.1.zip
+		unzip elasticsearch-5.5.1.zip
+		cd elasticsearch-5.5.1/ 
+		启动 Elastic。
+		./bin/elasticsearch
+		
+		时报错"max virtual memory areas vm.maxmapcount [65530] is too low"，要运行下面的命令。
+			sudo sysctl -w vm.max_map_count=262144
+			
+				切换到root用户
+
+				 ulimit -Hn  查看硬限制
+
+				vim /etc/security/limits.conf 
+
+				添加下面设置 hadoop是用户
+
+				es soft nofile 65536
+				es hard nofile 65536
+		访问
+			curl localhost:9200
+			
+		修改 Elastic 安装目录的config/elasticsearch.yml文件，去掉network.host的注释0.0.0.0	
+			network.host: 0.0.0.0
+			
+	tar安装
+		wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.2.0-darwin-x86_64.tar.gz
+		wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.2.0-darwin-x86_64.tar.gz.sha512
+		shasum -a 512 -c elasticsearch-7.2.0-darwin-x86_64.tar.gz.sha512 
+		tar -xzf elasticsearch-7.2.0-darwin-x86_64.tar.gz
+		cd elasticsearch-7.2.0/ 
+		启动
+			./bin/elasticsearch
+		
+基本概念
+	
+	
+	
+	elastic 分布式数据库
+	node 单个elastic 为一个节点
+	cluster 一组节点构成一个集群
+	index 索引（数据库）
+	document 多个构成index
+	type 分组 （分组document）
+	
+	倒排索引 才能被查询到
+	索引员工文档
+		Relational DB -> Databases -> Tables -> Rows -> Columns
+		Elasticsearch -> Indices   -> Types  -> Documents -> Fields
+	
+	
+		
+	Elasticsearch集群可以包含多个索引(indices)（数据库），每一个索引可以包含多个类型(types)（表），每一个类型包含多个文档(documents)（行），然后每个文档包含多个字段(Fields)（列）。
+	
+	window 启动
+		es ./bin/elasticsearch.bat   http://localhost:9200/
+		kibana ./bin/kibana.bat  http://localhost:5601/app/kibana#/home?_g=()
+		插件 head  npm install  npm run start  http://localhost:9100/
+	
+	PUT 添加数据
+	
+		PUT /megacorp/employee/1
+			{
+				"first_name" : "John",
+				"last_name" :  "Smith",
+				"age" :        25,
+				"about" :      "I love to go rock climbing",
+				"interests": [ "sports", "music" ]
+			}
+			/megacorp/employee/1   包含三部分信息
+			megacorp	索引名
+			employee	类型名
+			1	这个员工的ID
+			
+	
+	检索文档
+		单个员工的信息
+			GET /megacorp/employee/1
+		搜索全部员工
+			GET /megacorp/employee/_search
+		搜索姓氏中包含**“Smith”的员工    传递给参数q=
+			GET /megacorp/employee/_search?q=last_name:Smith
+			
+		DSL语句查询  以JSON请求体的形式出现   
+			match语句（查询类型之一）
+				GET /megacorp/employee/_search
+				{
+					"query" : {
+						"match" : {
+							"last_name" : "Smith"
+						}
+					}
+				}
+			过滤器(filter) 姓氏为“Smith”的员工  , 年龄大于30岁
+					GET /megacorp/employee/_search
+						{
+							"query" : {
+								"filtered" : {
+									"filter" : {
+										"range" : {
+											"age" : { "gt" : 30 } <1>
+										}
+									},
+									"query" : {
+										"match" : {
+											"last_name" : "smith" <2>
+										}
+									}
+								}
+							}
+						}
+			
+
+		全文搜索	
+		
+		短语搜索
+		
+		
