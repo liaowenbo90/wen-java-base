@@ -1,0 +1,65 @@
+spring boot
+	配置简洁 程序运行快速 启动
+	
+	idea构建项目
+		引入web模块
+			<dependency>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-web</artifactId>
+			 </dependency>
+				pom.xml文件中默认有两个模块：
+
+				spring-boot-starter：核心模块，包括自动配置支持、日志和YAML；
+
+				spring-boot-starter-test：测试模块，包括JUnit、Hamcrest、Mockito。
+		
+		编写controller内容
+			@RestController
+			public class HelloWorldController {
+				@RequestMapping("/hello")
+				public String index() {
+					return "Hello World";
+				}
+			}
+		启动主程序
+			http://localhost:8080/hello
+		单元测试
+			  @RunWith(SpringRunner.class)
+			  @SpringBootTest
+			 public class HelloWorldControlerTests {
+		开发环境的调试，时时生效
+			<dependencies>
+				<dependency>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-devtools</artifactId>
+					<optional>true</optional>
+			   </dependency>
+			</dependencies>
+			
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.springframework.boot</groupId>
+						<artifactId>spring-boot-maven-plugin</artifactId>
+						<configuration>
+							<fork>true</fork>
+						</configuration>
+					</plugin>
+			   </plugins>
+			</build>
+			
+	web开发
+	json 输出、filters、property、log
+		json接口开发
+			@RestController
+			public class HelloController {
+				@RequestMapping("/getUser")
+				public User getUser() {
+					User user=new User();
+					user.setUserName("小明");
+					user.setPassWord("xxxx");
+					return user;
+				}
+			}
+
+		

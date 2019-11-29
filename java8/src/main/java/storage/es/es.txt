@@ -282,4 +282,21 @@ es
 			_type 文档代表的对象类  
 			_id 文档的唯一标识
 			
+		PUT /{index}/{type}/{id}
+		{
+		  "field": "value",
+		  ...
+		}
+		pretty 美化输出 json格式
 		
+		_source 请求显示个别字段 如_source=title
+		_create 创建一个新的文档
+			PUT /website/blog/123?op_type=create
+			{ ... }
+		DELETE /website/blog/123
+		
+		PUT /website/blog/1/_create
+		{
+		  "title": "My first blog entry",
+		  "text":  "Just trying this out..."
+		}
