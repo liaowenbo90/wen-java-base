@@ -533,6 +533,85 @@ springcloud
 			起步依赖spring-cloud-starter-netflix- eureka-server
 			pom.xml
 			aplication.yml 
+				server:
+				  port: 8889
+
+				eureka:
+				  instance:
+					hostname: localhost
+				  client:
+					registerWithEureka: false
+					fetchRegistry: false
+					serviceUrl:
+					  defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
 			application.java  
 		
-					
+		7.2 config-server 
+			7.2.1 pom.xml 
+				<dependencies>
+					<dependency>
+						<groupId>org.springframework.cloud</groupId>
+						<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+					</dependency>
+					<dependency>
+						<groupId>org.springframework.boot</groupId>
+						<artifactId>spring-boot-starter-web</artifactId>
+					</dependency>
+					<dependency>
+						<groupId>org.springframework.cloud</groupId>
+						<artifactId>spring-cloud-config-server</artifactId>
+					</dependency>
+
+				</dependencies>
+			7.2.2 application.yml
+				spring.application.name=config-server
+				server.port=8888
+
+				spring.cloud.config.server.git.uri=https://github.com/forezp/SpringcloudConfig/
+				spring.cloud.config.server.git.searchPaths=respo
+				spring.cloud.config.label=master
+				spring.cloud.config.server.git.username= your username
+				spring.cloud.config.server.git.password= your password
+				eureka.client.serviceUrl.defaultZone=http://localhost:8889/eureka/
+			7.2.3 启动类
+				Application加上@EnableEureka
+		7.3 config-client
+			7.3.1 pom.xml 
+				起步依赖spring-cloud-starter-netflix-eureka-client
+				
+				<dependencies>
+					<dependency>
+						<groupId>org.springframework.cloud</groupId>
+						<artifactId>spring-cloud-starter-config</artifactId>
+					</dependency>
+
+					<dependency>
+						<groupId>org.springframework.boot</groupId>
+						<artifactId>spring-boot-starter-web</artifactId>
+					</dependency>
+
+					<dependency>
+						<groupId>org.springframework.cloud</groupId>
+						<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+					</dependency>
+				</dependencies>
+
+			7.3.2 bootstrap.properties
+				spring.application.name=config-client
+				spring.cloud.config.label=master
+				spring.cloud.config.profile=dev
+				#spring.cloud.config.uri= http://localhost:8888/
+
+				eureka.client.serviceUrl.defaultZone=http://localhost:8889/eureka/
+				spring.cloud.config.discovery.enabled=true
+				spring.cloud.config.discovery.serviceId=config-server
+				server.port=8881
+
+			依次启动eureka-servr,config-server,config-client
+			访问网址：http://localhost:8889/
+	8.0 消息总线程（springcloudBus）
+			将分布式的节点用轻量的消息代理连接起来,它可以用于广播配置文件的更改或者服务之间的通讯，也可以用于监控
+			rabbitmq安装启动 
+				在rabbitmq的安装目录下找到sbin目录，进入并在此目录打开cmd窗口(进入sbin的cmd窗口)。输入rabbitmq-plugins enable rabbitmq_management命令
+			
