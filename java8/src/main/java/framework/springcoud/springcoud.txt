@@ -613,5 +613,6 @@ springcloud
 	8.0 消息总线程（springcloudBus）
 			将分布式的节点用轻量的消息代理连接起来,它可以用于广播配置文件的更改或者服务之间的通讯，也可以用于监控
 			rabbitmq安装启动 
-				在rabbitmq的安装目录下找到sbin目录，进入并在此目录打开cmd窗口(进入sbin的cmd窗口)。输入rabbitmq-plugins enable rabbitmq_management命令
+				在rabbitmq的安装目录下找到sbin目录，进入并在此目录打开cmd窗口(进入sbin的cmd窗口)。
+				输入rabbitmq-plugins enable rabbitmq_management命令
 			
