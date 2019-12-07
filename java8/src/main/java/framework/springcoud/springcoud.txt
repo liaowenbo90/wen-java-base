@@ -615,4 +615,72 @@ springcloud
 			rabbitmq安装启动 
 				在rabbitmq的安装目录下找到sbin目录，进入并在此目录打开cmd窗口(进入sbin的cmd窗口)。
 				输入rabbitmq-plugins enable rabbitmq_management命令
-			
+		8.1 config-client
+				8.1.1 pom.xml 
+					起步依赖 spring-cloud-starter-bus-amqp
+						<dependencies>
+							<dependency>
+								<groupId>org.springframework.cloud</groupId>
+								<artifactId>spring-cloud-starter-config</artifactId>
+							</dependency>
+
+							<dependency>
+								<groupId>org.springframework.boot</groupId>
+								<artifactId>spring-boot-starter-web</artifactId>
+							</dependency>
+
+							<dependency>
+								<groupId>org.springframework.cloud</groupId>
+								<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+							</dependency>
+
+							<dependency>
+								<groupId>org.springframework.cloud</groupId>
+								<artifactId>spring-cloud-starter-bus-amqp</artifactId>
+							</dependency>
+
+							<dependency>
+								<groupId>org.springframework.boot</groupId>
+								<artifactId>spring-boot-starter-actuator</artifactId>
+							</dependency>
+						</dependencies>
+				8.1.2 application.properties
+					spring.rabbitmq.host=localhost
+					spring.rabbitmq.port=5672
+					spring.rabbitmq.username=guest
+					spring.rabbitmq.password=guest
+
+					spring.cloud.bus.enabled=true
+					spring.cloud.bus.trace.enabled=true
+					management.endpoints.web.exposure.include=bus-refresh
+					
+				8.1.3 configClientApplication 启动类
+					@SpringBootApplication
+					@EnableEurekaClient
+					@EnableDiscoveryClient
+					@RestController
+					@RefreshScope
+					public class ConfigClientApplication {
+
+						/**
+						 * http://localhost:8881/actuator/bus-refresh
+						 */
+
+						public static void main(String[] args) {
+							SpringApplication.run(ConfigClientApplication.class, args);
+						}
+
+						@Value("${foo}")
+						String foo;
+
+						@RequestMapping(value = "/hi")
+						public String hi(){
+							return foo;
+						}
+					}
+
+			依次启动eureka-server、confg-cserver,启动两个config-client，端口为：8881、8882。
+
+			访问http://localhost:8881/hi
+			我们只需要发送post请求： 重新读取配置
+			http://localhost:8881/actuator/bus-refresh
