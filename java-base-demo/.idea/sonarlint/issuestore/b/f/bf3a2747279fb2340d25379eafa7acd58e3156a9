@@ -1,0 +1,51 @@
+
+T
+squid:S106a"9Replace this use of System.out or System.err by a logger.(×ûöóıÿÿÿÿ
+T
+squid:S106G"9Replace this use of System.out or System.err by a logger.(Áù·«şÿÿÿÿ
+N
+squid:S106l"9Replace this use of System.out or System.err by a logger.(Î“¯}
+asquid:S1192C"JDefine a constant instead of duplicating this literal "filter:  " 5 times.(ÏÖÚù
+T
+squid:S106}"9Replace this use of System.out or System.err by a logger.(×ûöóıÿÿÿÿ
+msquid:S3457V"Q%n should be used in place of \n to produce the platform-specific line separator.(Áù·«şÿÿÿÿ
+Tsquid:UnusedPrivateMethodR"*Remove this unused private "test4" method.(·úå’ûÿÿÿÿ
+Osquid:UnusedPrivateMethodd"*Remove this unused private "test3" method.(ü‡ğù
+bsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(µÀÕ
+Usquid:UnusedPrivateMethod€"*Remove this unused private "test1" method.(Ğİàóÿÿÿÿÿ
+O
+squid:S106C"9Replace this use of System.out or System.err by a logger.(ÏÖÚù
+N
+squid:S106K"9Replace this use of System.out or System.err by a logger.(Î“¯}
+`squid:S1192K"JDefine a constant instead of duplicating this literal "map:     " 4 times.(Î“¯}
+Osquid:UnusedPrivateMethodr"*Remove this unused private "test2" method.(±“›š
+O
+squid:S106:"9Replace this use of System.out or System.err by a logger.(ú‚º¨
+O
+squid:S106Z"9Replace this use of System.out or System.err by a logger.(ÏÖÚù
+N
+squid:S106^"9Replace this use of System.out or System.err by a logger.(Î“¯}
+csquid:S3959."GRefactor this code so that this consumed stream pipeline is not reused.(ğ¸ÿùùÿÿÿÿ
+T
+squid:S106N"9Replace this use of System.out or System.err by a logger.(×ûöóıÿÿÿÿ
+T
+squid:S106o"9Replace this use of System.out or System.err by a logger.(×ûöóıÿÿÿÿ
+Osquid:UnusedPrivateMethod2"*Remove this unused private "test6" method.(†‚­ä
+U
+squid:S106‡"9Replace this use of System.out or System.err by a logger.(×ûöóıÿÿÿÿ
+T
+squid:S106V"9Replace this use of System.out or System.err by a logger.(Áù·«şÿÿÿÿ
+msquid:S3457G"Q%n should be used in place of \n to produce the platform-specific line separator.(Áù·«şÿÿÿÿ
+O
+squid:S106z"9Replace this use of System.out or System.err by a logger.(ÏÖÚù
+P
+squid:S106„"9Replace this use of System.out or System.err by a logger.(ÏÖÚù
+Osquid:UnusedPrivateMethod?"*Remove this unused private "test5" method.(£ä ş
+O
+squid:S106h"9Replace this use of System.out or System.err by a logger.(ÏÖÚù
+N
+squid:S106v"9Replace this use of System.out or System.err by a logger.(Î“¯}
+fsquid:S1192N"JDefine a constant instead of duplicating this literal "forEach: " 5 times.(×ûöóıÿÿÿÿ
+Osquid:UnusedPrivateMethod("*Remove this unused private "test7" method.(¦¢êÑ
+N
+squid:S1066"9Replace this use of System.out or System.err by a logger.(Î“¯}
