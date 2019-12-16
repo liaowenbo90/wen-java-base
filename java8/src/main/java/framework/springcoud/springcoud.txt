@@ -819,5 +819,70 @@ springcloud
 							return new RestTemplate();
 						}
 					}
+			http://localhost:8989/miya 
+			http://localhost:8988/hi
+			http://localhost:9411/traces/3ad8cf63ab22224c			
+			
+	10 高可用服务注册中心
+		eureka server 集群化
+		10.1 application.yml 
+			---
+			spring:
+			   profiles: peer1
+			server:
+			   port: 8761
+			eureka:
+			   instance:
+				  hostname: peer1
+			   client:
+				  serviceUrl:
+					 defaultZone: http://peer2:8769/eureka/
+
+			---
+			spring:
+			   profiles: peer2
+			server:
+			   port: 8769
+			eureka:
+			   instance:
+				  hostname: peer2
+			   client:
+				  serviceUrl:
+					 defaultZone: http://peer1:8761/eureka/
+		10.2 service-hi 
+			application.yml 
+				server:
+				  port: 8762
+
+				spring:
+				  application:
+					name: service-hi
+
+				eureka:
+				  client:
+					serviceUrl:
+					  defaultZone: http://peer1:8761/eureka/
+					  
 				
+	12 断路器(hystrix dashboard)
+		为例保证程序的可用性，防止程序出错导致网络阻塞，出现了断路器模型
+		13.1 service-hi
+			13.1.1 pom.xml 
+				<dependency>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-actuator</artifactId>
+				</dependency>
+
+				<dependency>
+					<groupId>org.springframework.cloud</groupId>
+					<artifactId>spring-cloud-starter-hystrix-dashboard</artifactId>
+				</dependency>
+				<dependency>
+					<groupId>org.springframework.cloud</groupId>
+					<artifactId>spring-cloud-starter-hystrix</artifactId>
+				</dependency>
+
+			
+		
+			
 					
