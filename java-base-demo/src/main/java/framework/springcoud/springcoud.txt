@@ -866,23 +866,70 @@ springcloud
 				
 	12 断路器(hystrix dashboard)
 		为例保证程序的可用性，防止程序出错导致网络阻塞，出现了断路器模型
-		13.1 service-hi
-			13.1.1 pom.xml 
-				<dependency>
-					<groupId>org.springframework.boot</groupId>
-					<artifactId>spring-boot-starter-actuator</artifactId>
-				</dependency>
-
-				<dependency>
-					<groupId>org.springframework.cloud</groupId>
-					<artifactId>spring-cloud-starter-hystrix-dashboard</artifactId>
-				</dependency>
-				<dependency>
-					<groupId>org.springframework.cloud</groupId>
-					<artifactId>spring-cloud-starter-hystrix</artifactId>
-				</dependency>
-
-			
+		12.1 service-hi
+			12.1.1 pom.xml 
+				<dependencies>
+					<dependency>
+						<groupId>org.springframework.cloud</groupId>
+						<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+					</dependency>
+					<dependency>
+						<groupId>org.springframework.boot</groupId>
+						<artifactId>spring-boot-starter-web</artifactId>
+					</dependency>
+					<dependency>
+						<groupId>org.springframework.boot</groupId>
+						<artifactId>spring-boot-starter-actuator</artifactId>
+					</dependency>
+					<dependency>
+						<groupId>org.springframework.cloud</groupId>
+						<artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+					</dependency>
+					<dependency>
+						<groupId>org.springframework.cloud</groupId>
+						<artifactId>spring-cloud-starter-netflix-hystrix-dashboard</artifactId>
+					</dependency>
+					
+				</dependencies>
 		
+			12.1.2 ServiceHiApplication.java 启动类
+				@EnableHystrix 注解开启断路器
+				声明断路点HystrixCommand
+				@EnableHystrixDashboard 
 			
+				@SpringBootApplication
+				@EnableEurekaClient
+				@EnableDiscoveryClient
+				@RestController
+				@EnableHystrix
+				@EnableHystrixDashboard
+				@EnableCircuitBreaker
+				public class ServiceHiApplication {
+
+					/**
+					 * 访问地址 http://localhost:8762/actuator/hystrix.stream
+					 * @param args
+					 */
+
+					public static void main(String[] args) {
+						SpringApplication.run( ServiceHiApplication.class, args );
+					}
+
+					@Value("${server.port}")
+					String port;
+
+					@RequestMapping("/hi")
+					@HystrixCommand(fallbackMethod = "hiError")
+					public String home(@RequestParam(value = "name", defaultValue = "forezp") String name) {
+						return "hi " + name + " ,i am from port:" + port;
+					}
+
+					public String hiError(String name) {
+						return "hi,"+name+",sorry,error!";
+					}
+
+				}
+
+	13 断路器聚合监控（Hystrix Turbine）
+		
 					
