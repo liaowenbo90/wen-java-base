@@ -1,0 +1,36 @@
+
+T
+squid:S106&"9Replace this use of System.out or System.err by a logger.(•‹áéıÿÿÿÿ
+Tsquid:UnusedPrivateMethodD"*Remove this unused private "test2" method.(ö‘ñËıÿÿÿÿ
+T
+squid:S1066"9Replace this use of System.out or System.err by a logger.(¬ôÇòıÿÿÿÿ
+T
+squid:S106V"9Replace this use of System.out or System.err by a logger.(Ûâ©½øÿÿÿÿ
+msquid:S3457:"Q%n should be used in place of \n to produce the platform-specific line separator.(®†‹şúÿÿÿÿ
+T
+squid:S106:"9Replace this use of System.out or System.err by a logger.(®†‹şúÿÿÿÿ
+T
+squid:S106A"9Replace this use of System.out or System.err by a logger.(«¾‡ôıÿÿÿÿ
+msquid:S3457L"Q%n should be used in place of \n to produce the platform-specific line separator.(®†‹şúÿÿÿÿ
+msquid:S3457>"Q%n should be used in place of \n to produce the platform-specific line separator.(•‹áéıÿÿÿÿ
+msquid:S3457O"Q%n should be used in place of \n to produce the platform-specific line separator.(«¾‡ôıÿÿÿÿ
+T
+squid:S106O"9Replace this use of System.out or System.err by a logger.(«¾‡ôıÿÿÿÿ
+msquid:S3457H"Q%n should be used in place of \n to produce the platform-specific line separator.(¬ôÇòıÿÿÿÿ
+O
+squid:S106/"9Replace this use of System.out or System.err by a logger.(½†Ò
+Tsquid:UnusedPrivateMethod"*Remove this unused private "test4" method.(‹•—Áıÿÿÿÿ
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(áİ˜ïüÿÿÿÿ
+T
+squid:S106*"9Replace this use of System.out or System.err by a logger.(³ğ¸ûÿÿÿÿ
+T
+squid:S106L"9Replace this use of System.out or System.err by a logger.(®†‹şúÿÿÿÿ
+Tsquid:UnusedPrivateMethodR"*Remove this unused private "test1" method.(•Ü±ªÿÿÿÿÿ
+msquid:S3457&"Q%n should be used in place of \n to produce the platform-specific line separator.(•‹áéıÿÿÿÿ
+T
+squid:S106>"9Replace this use of System.out or System.err by a logger.(•‹áéıÿÿÿÿ
+msquid:S34576"Q%n should be used in place of \n to produce the platform-specific line separator.(¬ôÇòıÿÿÿÿ
+T
+squid:S106H"9Replace this use of System.out or System.err by a logger.(¬ôÇòıÿÿÿÿ
+bsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ê¯å®
+msquid:S3457A"Q%n should be used in place of \n to produce the platform-specific line separator.(«¾‡ôıÿÿÿÿ
